@@ -2,18 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(23, 147, 169);
+  background-color: whitesmoke;
   color: black;
   position: sticky;
   top: 0;
   z-index: 999;
   transition: 0.5s all ease;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: #ebe9e9 1px solid;
 }
 
-button {
-  background-color: white !important;
-  color: #1dbf73 !important;
-  border: 1px solid #1dbf73 !important;
+.link {
+  text-decoration: none;
+  color: #155263;
 }
 
 .container {
@@ -63,27 +65,27 @@ img {
   background-color: white;
   border-radius: 10px;
   z-index: 999;
-  border: 1px solid lightgrey;
+  border: 1px solid #1a1a2e;
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 200px;
   font-weight: 300;
-  color: gray;
+  color: #1a1a2e;
 }
 
 button {
-  color: white;
+  color: #155263;
   padding: 10px 20px;
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid #155263;
   background-color: transparent;
   cursor: pointer;
-
-  &:hover {
-    background-color: #1dbf73;
-    border-color: #1dbf73;
-  }
+}
+button:hover {
+  color: white;
+  background-color: #155263;
+  transition: all ease 0.4s;
 }
 
 hr {
@@ -98,7 +100,7 @@ hr {
   padding: 10px 0px;
   display: flex;
   justify-content: space-between;
-  color: gray;
+  color: #1a1a2e;
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
 }

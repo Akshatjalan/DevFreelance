@@ -1,22 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
 
-  //   const { pathname } = useLocation();
-
-  // const currentUser = null
+  // const currentUser = null;
 
   const currentUser = {
     id: 1,
     username: "Akshat",
-    isSeller: true,
+    isSeller: false,
   };
 
   return (
-    <div className={"navbar"}>
+    <div className="navbar">
       <div className="container">
         <div className="logo">
           <Link className="link" to="/">
@@ -24,10 +22,8 @@ function Navbar() {
           </Link>
         </div>
         <div className="links">
-          <span>Code FreeLance Business</span>
           <span>Explore</span>
-          <span>English</span>
-          {!currentUser?.isSeller && <span>Become a Seller</span>}
+          {!currentUser?.isSeller && <button>Become a Seller</button>}
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
               <img
@@ -80,13 +76,13 @@ function Navbar() {
             Testing
           </Link>
           <Link className="link menuLink" to="/">
-            Writing & Translation
+            Design UI/UX
           </Link>
           <Link className="link menuLink" to="/">
             AI Services
           </Link>
           <Link className="link menuLink" to="/">
-            Digital Marketing
+            Debugging
           </Link>
           <Link className="link menuLink" to="/">
             Music & Audio
@@ -97,11 +93,7 @@ function Navbar() {
           <Link className="link menuLink" to="/">
             Business
           </Link>
-          <Link className="link menuLink" to="/">
-            Lifestyle
-          </Link>
         </div>
-        <hr />
       </>
     </div>
   );
