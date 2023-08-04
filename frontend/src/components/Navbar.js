@@ -3,21 +3,9 @@ import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 function Navbar() {
-  const [active, setActive] = useState(false);
   const [open, setOpen] = useState(false);
 
   //   const { pathname } = useLocation();
-
-  const isActive = () => {
-    window.scrollY > 0 ? setActive(true) : setActive(false);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", isActive);
-    return () => {
-      window.removeEventListener("scroll", isActive);
-    };
-  }, []);
 
   // const currentUser = null
 
@@ -28,7 +16,7 @@ function Navbar() {
   };
 
   return (
-    <div className={active ? "navbar active" : "navbar"}>
+    <div className={"navbar"}>
       <div className="container">
         <div className="logo">
           <Link className="link" to="/">
@@ -81,15 +69,15 @@ function Navbar() {
           )}
         </div>
       </div>
-      (
+
       <>
         <hr />
         <div className="menu">
           <Link className="link menuLink" to="/">
-            Graphics & Design
+            Code Review
           </Link>
           <Link className="link menuLink" to="/">
-            Video & Animation
+            Testing
           </Link>
           <Link className="link menuLink" to="/">
             Writing & Translation
@@ -115,7 +103,6 @@ function Navbar() {
         </div>
         <hr />
       </>
-      )
     </div>
   );
 }

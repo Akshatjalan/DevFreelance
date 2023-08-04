@@ -2,17 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #013914;
-  color: white;
+  background-color: rgb(23, 147, 169);
+  color: black;
   position: sticky;
   top: 0;
   z-index: 999;
   transition: 0.5s all ease;
-}
-
-.navbar:active {
-  background-color: white;
-  color: black;
 }
 
 button {
