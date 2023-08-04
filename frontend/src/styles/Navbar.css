@@ -7,7 +7,6 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  transition: 0.5s all ease;
   text-decoration: none;
   padding-bottom: 5px;
   border-bottom: #ebe9e9 1px solid;
@@ -27,7 +26,7 @@
 }
 
 .logo {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -61,17 +60,24 @@ img {
   position: absolute;
   top: 50px;
   right: 0;
-  padding: 20px;
+  padding: 15px;
   background-color: white;
   border-radius: 10px;
   z-index: 999;
-  border: 1px solid #1a1a2e;
+  border: 1px solid #155263;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 200px;
+  width: 150px;
   font-weight: 300;
-  color: #1a1a2e;
+  color: #155263;
+}
+
+.options_link {
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: #155263;
+  border-bottom: #155263 1px solid;
 }
 
 button {
@@ -85,14 +91,13 @@ button {
 button:hover {
   color: white;
   background-color: #155263;
-  transition: all ease 0.4s;
+  transition: all ease 0.5s;
 }
 
 hr {
   width: calc(100% - 2px);
   height: 0;
   border-top: 0.5px solid #ebe9e9;
-  border-bottom: 0.5px solid #ebe9e9;
 }
 
 .menu {

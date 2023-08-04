@@ -10,7 +10,7 @@ function Navbar() {
   const currentUser = {
     id: 1,
     username: "Akshat",
-    isSeller: false,
+    isSeller: true,
   };
 
   return (
@@ -35,21 +35,21 @@ function Navbar() {
                 <div className="options">
                   {currentUser.isSeller && (
                     <>
-                      <Link className="link" to="/mygigs">
-                        Gigs
+                      <Link className="options_link" to="/myTasks">
+                        My Tasks
                       </Link>
-                      <Link className="link" to="/add">
-                        Add New Gig
+                      <Link className="options_link" to="/add">
+                        Add
                       </Link>
                     </>
                   )}
-                  <Link className="link" to="/orders">
+                  <Link className="options_link" to="/orders">
                     Orders
                   </Link>
-                  <Link className="link" to="/messages">
+                  <Link className="options_link" to="/messages">
                     Messages
                   </Link>
-                  <Link className="link" to="/">
+                  <Link className="options_link" to="/">
                     Logout
                   </Link>
                 </div>

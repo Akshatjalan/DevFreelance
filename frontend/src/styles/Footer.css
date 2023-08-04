@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 50px 0px;
+  background-color: #155263;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.top .item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.item h2 {
+  font-size: 16px;
+  color: #fefefe;
+}
+.item span {
+  font-weight: 300;
+}
+
+.left {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.social {
+  display: flex;
+  gap: 20px;
+}
