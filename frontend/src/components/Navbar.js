@@ -70,6 +70,15 @@ function Navbar() {
         <hr />
         <div className="menu">
           <Link className="link menuLink" to="/">
+            Debugging
+          </Link>
+          <Link className="link menuLink" to="/">
+            Web Development
+          </Link>
+          <Link className="link menuLink" to="/">
+            App Development
+          </Link>
+          <Link className="link menuLink" to="/">
             Code Review
           </Link>
           <Link className="link menuLink" to="/">
@@ -81,12 +90,7 @@ function Navbar() {
           <Link className="link menuLink" to="/">
             AI Services
           </Link>
-          <Link className="link menuLink" to="/">
-            Debugging
-          </Link>
-          <Link className="link menuLink" to="/">
-            Music & Audio
-          </Link>
+
           <Link className="link menuLink" to="/">
             Programming & Tech
           </Link>
