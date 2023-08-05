@@ -22,15 +22,17 @@ function Navbar() {
           </Link>
         </div>
         <div className="links">
-          <span>Explore</span>
-          {!currentUser?.isSeller && <button>Become a Seller</button>}
+          <span className="username">Explore</span>
+          {!currentUser?.isSeller && (
+            <button className="navbarButtons">Become a Seller</button>
+          )}
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
               <img
                 src="https://images.pexels.com/photos/1115697/pexels-photo-1115697.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt=""
               />
-              <span>{currentUser?.username}</span>
+              <span className="username">{currentUser?.username}</span>
               {open && (
                 <div className="options">
                   {currentUser.isSeller && (
@@ -39,7 +41,7 @@ function Navbar() {
                         My Tasks
                       </Link>
                       <Link className="options_link" to="/add">
-                        Add
+                        Add Gigs
                       </Link>
                     </>
                   )}
@@ -59,7 +61,7 @@ function Navbar() {
             <>
               <span>Sign in</span>
               <Link className="link" to="/register">
-                <button>Join</button>
+                <button className="navbarButtons">Join</button>
               </Link>
             </>
           )}

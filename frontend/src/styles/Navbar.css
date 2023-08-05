@@ -49,7 +49,7 @@ span {
   position: relative;
 }
 
-img {
+.user img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -60,27 +60,41 @@ img {
   position: absolute;
   top: 50px;
   right: 0;
-  padding: 15px;
+  padding: 20px;
   background-color: white;
   border-radius: 10px;
   z-index: 999;
   border: 1px solid #155263;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   width: 150px;
-  font-weight: 300;
-  color: #155263;
 }
 
 .options_link {
-  padding-bottom: 5px;
   text-decoration: none;
   color: #155263;
-  border-bottom: #155263 1px solid;
 }
 
-button {
+.options_link:hover {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #155263;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  transition: all ease 0.2s;
+}
+
+.username:hover {
+  color: #155263;
+  border-bottom: 1px solid #155263;
+  transition: all ease-in 0.2s;
+}
+
+.navbarButtons {
   color: #155263;
   padding: 10px 20px;
   border-radius: 5px;
@@ -88,7 +102,7 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
-button:hover {
+.navbarButtons:hover {
   color: white;
   background-color: #155263;
   transition: all ease 0.5s;
