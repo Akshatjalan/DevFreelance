@@ -1,0 +1,47 @@
+.homeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+
+.homeTitle {
+  padding: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bolder;
+  width: 600px;
+}
+
+.homeDesc {
+  text-align: center;
+  width: 700px;
+}
+
+.clientContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.clientCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1400px;
+}
+
+.clientTitle {
+  padding-bottom: 10px;
+  font-size: 35px;
+  font-weight: bold;
+  width: 550px;
+}
+
+.clientDesc {
+  text-align: left;
+  width: 550px;
+}

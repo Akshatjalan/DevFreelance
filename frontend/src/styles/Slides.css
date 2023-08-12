@@ -1,7 +1,7 @@
 .slide {
   display: flex;
   justify-content: center;
-  padding: 100px 0px;
+  padding: 50px 0px;
 }
 .slideContainer {
   width: 1400px;
@@ -16,7 +16,7 @@
 .carousel-next {
   width: 50px !important;
   height: 50px !important;
-  background-color: whitesmoke !important;
+  background-color: rgb(0, 0, 0) !important;
   border-radius: 50%;
   position: absolute !important;
   top: 0 !important;
