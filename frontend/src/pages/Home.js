@@ -40,7 +40,7 @@ function Home() {
               successful project outcomes.
             </div>
           </div>
-          <img src={logo} height="500px" />
+          <img src={logo} height="480px" />
         </div>
       </div>
     </>

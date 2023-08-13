@@ -26,4 +26,8 @@
 
 .carousel-prev {
   left: -25px !important;
+  display: none !important;
+}
+.carousel-next:before {
+  background-image: url(https://www.freeiconspng.com/uploads/white-arrow-icon-5.png) !important;
 }
