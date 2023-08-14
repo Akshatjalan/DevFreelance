@@ -7,13 +7,13 @@ import profilePic from "../assets/undraw_Male_avatar.png";
 function Navbar() {
   const [open, setOpen] = useState(false);
 
-  // const currentUser = null;
+  const currentUser = null;
 
-  const currentUser = {
-    id: 1,
-    username: "Akshat",
-    isSeller: true,
-  };
+  // const currentUser = {
+  //   id: 1,
+  //   username: "Akshat",
+  //   isSeller: true,
+  // };
 
   return (
     <div className="navbar">
@@ -38,7 +38,7 @@ function Navbar() {
             Discover Gigs
           </Link>
           {!currentUser?.isSeller && (
-            <button className="navbarButtons">Become a Developer</button>
+            <button className="Buttons1">Become Developer</button>
           )}
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
@@ -72,7 +72,7 @@ function Navbar() {
             <>
               {/* <Link className="nav_links">Sign in</Link> */}
               <Link className="link" to="/register">
-                <button className="joinButton">Sign Up</button>
+                <button className="Buttons">Sign Up</button>
               </Link>
             </>
           )}

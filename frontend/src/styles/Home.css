@@ -18,6 +18,7 @@
 .homeDesc {
   text-align: center;
   width: 700px;
+  font-size: 17px;
 }
 
 .clientContainer {
@@ -44,39 +45,35 @@
 .clientDesc {
   text-align: left;
   width: 550px;
+  padding-bottom: 15px;
 }
 
-.serviceContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 0px;
+.Buttons {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid black;
+  font-size: 15px;
 }
 
-.serviceCont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 1400px;
-}
-
-.serviceTitle {
-  padding-bottom: 10px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.projectsCards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.projectsItems {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.Buttons:hover {
+  color: #000;
+  background-color: white;
+  border: 1px solid black;
+  transition: all ease-in-out 0.5s;
   cursor: pointer;
-  padding: 20px;
+}
+
+.Buttons1 {
+  background-color: white;
+  padding: 10px 20px;
+  border: 1px solid black;
+  font-size: 15px;
+}
+
+.Buttons1:hover {
+  color: white;
+  background-color: black;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
 }

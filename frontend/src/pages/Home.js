@@ -12,12 +12,13 @@ function Home() {
     <>
       <div className="homeContainer">
         <div className="homeTitle">
-          Discover Exciting Opportunites and Showcase Your skills
+          Hire top-notch developers for your projects on CodeLance.
         </div>
         <div className="homeDesc">
-          CodeLance is the ultimate freelance platform for coders and developers
-          to find gigs and showcase their skills. Join codeLance community and
-          unlock a world of exciting Opportunites
+          CodeLance provides a dedicated platform for clients to easily find and
+          hire skilled developers for their gigs. With seamless communication
+          and collaboration features, you can ensure successful project
+          outcomes.
         </div>
       </div>
 
@@ -33,36 +34,16 @@ function Home() {
         <div className="clientCont">
           <div>
             <div className="clientTitle">
-              Find and hire top-notch developers for your projects on CodeLance.
+              Discover Exciting Opportunites and Showcase Your skills
             </div>
             <div className="clientDesc">
-              CodeLance provides a dedicated platform for clients to easily find
-              and hire skilled developers for their gigs. With seamless
-              communication and collaboration features, you can ensure
-              successful project outcomes.
+              CodeLance is the ultimate freelance platform for coders and
+              developers to find gigs and showcase their skills. Join codeLance
+              community and unlock a world of exciting Opportunites
             </div>
+            <button className="Buttons">Become Developer</button>
           </div>
           <img src={freelancerPic} height="480px" alt="" />
-        </div>
-      </div>
-
-      <div className="serviceContainer">
-        <div className="serviceCont">
-          <div className="serviceTitle">Our Services</div>
-          <div className="projectsCards">
-            {projects.map((item) => (
-              <div className="projectsItems">
-                <img
-                  className="projectsImg"
-                  src={item.img}
-                  alt=""
-                  width="400px"
-                />
-                <p>{item.cat}</p>
-                {item.username}
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </>

@@ -64,19 +64,21 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   width: 150px;
+  font-weight: 500;
 }
 
 .options_link {
   text-decoration: none;
   color: black;
+  padding: 7px;
 }
 
 .options_link:hover {
   display: flex;
   justify-content: center;
-  padding: 5px;
+  padding: 7px;
   background-color: black;
   border-radius: 5px;
   color: white;
@@ -94,27 +96,4 @@
   color: #3f3d56;
   border-bottom: 1px solid #3f3d56;
   transition: all ease 0.1s;
-}
-
-.navbarButtons {
-  color: black;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: 1px solid black;
-  background-color: transparent;
-  cursor: pointer;
-}
-.navbarButtons:hover {
-  color: white;
-  background-color: black;
-  transition: all ease 0.5s;
-}
-
-.joinButton {
-  color: white;
-  background-color: black;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: 1px solid black;
-  cursor: pointer;
 }
