@@ -16,7 +16,7 @@
 .carousel-next {
   width: 50px !important;
   height: 50px !important;
-  background-color: rgb(0, 0, 0) !important;
+  background-color: #3f3d5628 !important;
   border-radius: 50%;
   position: absolute !important;
   top: 0 !important;
@@ -26,8 +26,11 @@
 
 .carousel-prev {
   left: -25px !important;
-  display: none !important;
 }
 .carousel-next:before {
-  background-image: url(https://www.freeiconspng.com/uploads/white-arrow-icon-5.png) !important;
+  background-image: url(../assets/right-arrow.png) !important;
+}
+
+.carousel-prev:before {
+  background-image: url(../assets/left-arrow.png) !important;
 }

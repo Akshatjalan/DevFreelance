@@ -45,3 +45,38 @@
   text-align: left;
   width: 550px;
 }
+
+.serviceContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.serviceCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 1400px;
+}
+
+.serviceTitle {
+  padding-bottom: 10px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.projectsCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projectsItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  padding: 20px;
+}

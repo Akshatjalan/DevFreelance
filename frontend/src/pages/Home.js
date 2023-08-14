@@ -2,8 +2,10 @@ import React from "react";
 import Slides from "../components/Slides";
 import CatCard from "../components/CatCard";
 import { cards } from "../data.js";
+import { projects } from "../data.js";
 import "../styles/Home.css";
-import logo from "../assests/clientFreelancer.png";
+import logo from "../assets/clientFreelancer.png";
+import freelancerPic from "../assets/undraw_Designer.png";
 
 function Home() {
   return (
@@ -40,7 +42,27 @@ function Home() {
               successful project outcomes.
             </div>
           </div>
-          <img src={logo} height="480px" />
+          <img src={freelancerPic} height="480px" alt="" />
+        </div>
+      </div>
+
+      <div className="serviceContainer">
+        <div className="serviceCont">
+          <div className="serviceTitle">Our Services</div>
+          <div className="projectsCards">
+            {projects.map((item) => (
+              <div className="projectsItems">
+                <img
+                  className="projectsImg"
+                  src={item.img}
+                  alt=""
+                  width="400px"
+                />
+                <p>{item.cat}</p>
+                {item.username}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

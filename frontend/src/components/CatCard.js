@@ -7,7 +7,7 @@ function CatCard({ card }) {
     <Link to="/tasks?cat=design">
       <div className="catCard">
         <img src={card.img} alt="" />
-        <span className="desc">{card.desc}</span>
+        {/* <span className="desc">{card.desc}</span> */}
         <span className="title">{card.title}</span>
       </div>
     </Link>

@@ -34,7 +34,7 @@
   align-items: center;
   gap: 35px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .user {
@@ -46,10 +46,10 @@
 }
 
 .user img {
-  width: 32px;
-  height: 32px;
+  width: 37px;
+  height: 37px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .options {
@@ -91,9 +91,9 @@
 
 .nav_links:hover {
   cursor: pointer;
-  color: black;
-  border-bottom: 1.5px solid black;
-  transition: all ease 0.5s;
+  color: #3f3d56;
+  border-bottom: 1px solid #3f3d56;
+  transition: all ease 0.1s;
 }
 
 .navbarButtons {

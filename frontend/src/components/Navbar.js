@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
-import logo from "../assests/codelance_logo.png";
+import logo from "../assets/codelance_logo.png";
+import profilePic from "../assets/undraw_Male_avatar.png";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -41,10 +42,7 @@ function Navbar() {
           )}
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
-              <img
-                src="https://images.pexels.com/photos/1115689/pexels-photo-1115689.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                alt=""
-              />
+              <img src={profilePic} alt="" />
               <span className="nav_links">{currentUser?.username}</span>
               {open && (
                 <div className="options">
