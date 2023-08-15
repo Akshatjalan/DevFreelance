@@ -7,13 +7,13 @@ import profilePic from "../assets/undraw_Male_avatar.png";
 function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const currentUser = null;
+  // const currentUser = null;
 
-  // const currentUser = {
-  //   id: 1,
-  //   username: "Akshat",
-  //   isSeller: true,
-  // };
+  const currentUser = {
+    id: 1,
+    username: "Akshat",
+    isSeller: true,
+  };
 
   return (
     <div className="navbar">
@@ -21,7 +21,7 @@ function Navbar() {
         <div className="logo">
           <Link className="link" to="/">
             {/* <span>CodeLance</span> */}
-            <img src={logo} height="50px" />
+            <img src={logo} height="50px" alt="" />
           </Link>
         </div>
         <div className="links">
@@ -48,8 +48,8 @@ function Navbar() {
                 <div className="options">
                   {currentUser.isSeller && (
                     <>
-                      <Link className="options_link" to="/myTasks">
-                        My Tasks
+                      <Link className="options_link" to="/myGigs">
+                        My Gigs
                       </Link>
                       <Link className="options_link" to="/add">
                         Add Gigs

@@ -4,8 +4,8 @@ import CatCard from "../components/CatCard";
 import { cards } from "../data.js";
 import { projects } from "../data.js";
 import "../styles/Home.css";
-import logo from "../assets/clientFreelancer.png";
 import freelancerPic from "../assets/undraw_Designer.png";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -44,6 +44,27 @@ function Home() {
             <button className="Buttons">Become Developer</button>
           </div>
           <img src={freelancerPic} height="480px" alt="" />
+        </div>
+      </div>
+
+      <div className="clientContainer">
+        <div className="clientCont">
+          <div>
+            <div className="featuredTitle">Featured Work</div>
+            <div className="featuredContainer">
+              {projects.map((card) => (
+                <Link to="/gigs?cat=design">
+                  <div className="featureCard">
+                    <img src={card.img} alt="" />
+                    <br />
+                    <span className="featureCardCat">{card.cat}</span>
+                    <br />
+                    <span className="featureCardName">{card.username}</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </>

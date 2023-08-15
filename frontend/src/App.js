@@ -3,15 +3,15 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Tasks from "./pages/Tasks";
-import MyTasks from "./pages/MyTasks";
+import Gigs from "./pages/Gigs";
+import MyGigs from "./pages/MyGigs";
 import Orders from "./pages/Orders";
 import Messages from "./pages/Messages";
 import Add from "./pages/Add";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Message from "./pages/Message";
-import Task from "./pages/Task";
+import Gig from "./pages/Gig";
 import Footer from "./components/Footer";
 
 function App() {
@@ -35,12 +35,12 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/tasks",
-          element: <Tasks />,
+          path: "/gigs",
+          element: <Gigs />,
         },
         {
-          path: "/myTasks",
-          element: <MyTasks />,
+          path: "/myGigs",
+          element: <MyGigs />,
         },
         {
           path: "/orders",
@@ -59,8 +59,8 @@ function App() {
           element: <Add />,
         },
         {
-          path: "/task/:id",
-          element: <Task />,
+          path: "/gig/:id",
+          element: <Gig />,
         },
       ],
     },

@@ -25,14 +25,13 @@
 }
 
 .logo {
-  font-size: 25px;
   font-weight: bold;
 }
 
 .links {
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
