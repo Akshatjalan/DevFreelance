@@ -5,7 +5,7 @@
 
 # CodeLance Description
 <h3>
-  CodeLance provides a dedicated platform for clients to easily find and hire skilled developers for their gigs. With seamless communication and collaboration features, you can ensure successful project outcomes.
+  CodeLance provides a dedicated freelancing platform for clients to easily find and hire skilled developers for their gigs. With seamless communication and collaboration features, you can ensure successful project outcomes.
 </h3>
 
 # Tools Used
