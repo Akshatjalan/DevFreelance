@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
-import logo from "../assets/codelance_logo.png";
 import profilePic from "../assets/undraw_Male_avatar.png";
+import logo from "../assets/logo.png";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
 
-  // const currentUser = null;
+  const currentUser = null;
 
-  const currentUser = {
-    id: 1,
-    username: "Akshat",
-    isSeller: true,
-  };
+  // const currentUser = {
+  //   id: 1,
+  //   username: "Akshat",
+  //   isSeller: true,
+  // };
 
   return (
     <div className="navbar">
@@ -21,7 +21,7 @@ function Navbar() {
         <div className="logo">
           <Link className="link" to="/">
             {/* <span>CodeLance</span> */}
-            <img src={logo} height="50px" alt="" />
+            <img src={logo} height="27px" alt="" />
           </Link>
         </div>
         <div className="links">

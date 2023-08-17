@@ -21,7 +21,6 @@ function Home() {
           outcomes.
         </div>
       </div>
-
       <div>
         <Slides slidesToShow={5} arrowsScroll={2}>
           {cards.map((card) => (
@@ -36,6 +35,7 @@ function Home() {
             <div className="clientTitle">
               Discover Exciting Opportunites and Showcase Your skills
             </div>
+
             <div className="clientDesc">
               CodeLance is the ultimate freelance platform for coders and
               developers to find gigs and showcase their skills. Join codeLance

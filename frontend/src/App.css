@@ -6,3 +6,12 @@ body {
   background: #3f3d56;
   color: white;
 }
+
+@font-face {
+  font-family: poppins;
+  src: url(./assets/Poppins/Poppins-Medium.ttf);
+}
+
+* {
+  font-family: poppins;
+}

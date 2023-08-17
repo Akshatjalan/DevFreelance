@@ -24,16 +24,11 @@
   padding: 20px 0px;
 }
 
-.logo {
-  font-weight: bold;
-}
-
 .links {
   display: flex;
   align-items: center;
   gap: 30px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
 }
 
 .user {
@@ -65,7 +60,6 @@
   flex-direction: column;
   gap: 10px;
   width: 150px;
-  font-weight: 500;
 }
 
 .options_link {
@@ -94,5 +88,5 @@
   cursor: pointer;
   color: #3f3d56;
   border-bottom: 1px solid #3f3d56;
-  transition: all ease 0.1s;
+  transition: all ease-in-out 0.5s;
 }
