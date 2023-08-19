@@ -1,12 +1,13 @@
 import React from "react";
 import "../styles/Footer.css";
+import logo from "../assets/logo.png";
 
 function Footer() {
   return (
     <div className="footer">
       <div className="footerContainer">
         <div className="top">
-          <h2>CodeLance</h2>
+          <img src={logo} height="40px" />
           <div className="item">
             <h2>About</h2>
             <h2>Services</h2>

@@ -80,13 +80,15 @@
 }
 
 .nav_links {
+  font-size: 17px;
+  font-family: "gilroySemiBold";
   text-decoration: none;
   color: black;
+  transition: all ease-in-out 0.7s;
 }
 
 .nav_links:hover {
+  font-family: "gilroy";
   cursor: pointer;
-  color: #3f3d56;
-  border-bottom: 1px solid #3f3d56;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.7s;
 }

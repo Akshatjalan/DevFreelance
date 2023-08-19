@@ -1,4 +1,5 @@
 .catCard {
+  background-color: white;
   width: 252px;
   height: 345px;
   color: white;
@@ -16,11 +17,12 @@
 }
 
 .title {
+  font-family: "gilroyBold";
   text-align: center;
   position: absolute;
   top: 15px;
   left: 15px;
   font-size: 18px;
   font-weight: 600;
-  color: #3f3d56;
+  color: #000000;
 }

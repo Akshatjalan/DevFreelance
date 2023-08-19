@@ -21,20 +21,14 @@ function Navbar() {
         <div className="logo">
           <Link className="link" to="/">
             {/* <span>CodeLance</span> */}
-            <img src={logo} height="27px" alt="" />
+            <img src={logo} height="47px" alt="" />
           </Link>
         </div>
         <div className="links">
           <Link className="nav_links" to="/">
             Find Developers
           </Link>
-          <Link className="nav_links" to="/">
-            Hire Coders
-          </Link>
-          <Link className="nav_links" to="/">
-            Showcase Skills
-          </Link>
-          <Link className="nav_links" to="/">
+          <Link className="nav_links" to="/gigs">
             Discover Gigs
           </Link>
           {!currentUser?.isSeller && (

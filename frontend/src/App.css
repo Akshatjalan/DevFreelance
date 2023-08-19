@@ -21,3 +21,7 @@ body {
   font-family: gilroySemiBold;
   src: url(./assets/Poppins/Gilroy-SemiBold.ttf);
 }
+
+* {
+  font-family: gilroy;
+}

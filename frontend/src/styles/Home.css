@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px 0px;
   min-height: 90vh;
 }
 
@@ -16,6 +15,7 @@
   width: 1300px;
   letter-spacing: -3.5px;
   white-space: pre-line;
+  line-height: 125px;
 }
 
 .homeDesc {
@@ -48,18 +48,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 0px;
-  min-height: 90vh;
-  background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/deserve-more-bg.jpg);
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000;
+  /* background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/deserve-more-bg.jpg); */
   background-size: cover;
+}
+
+.SlideTitle {
+  color: white;
+  padding-bottom: 30px;
+  font-family: "gilroyBold";
+  font-size: 65px;
+  letter-spacing: -2px;
 }
 
 .clientContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 0px;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .clientCont {
