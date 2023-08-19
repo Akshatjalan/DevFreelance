@@ -3,15 +3,21 @@ body {
 }
 
 *::selection {
-  background: #3f3d56;
+  background: #000000;
   color: white;
 }
 
 @font-face {
-  font-family: poppins;
-  src: url(./assets/Poppins/Poppins-Medium.ttf);
+  font-family: gilroy;
+  src: url(./assets/Poppins/Gilroy-Regular.ttf);
 }
 
-* {
-  font-family: poppins;
+@font-face {
+  font-family: gilroyBold;
+  src: url(./assets/Poppins/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: gilroySemiBold;
+  src: url(./assets/Poppins/Gilroy-SemiBold.ttf);
 }

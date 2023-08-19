@@ -4,20 +4,54 @@
   justify-content: center;
   flex-direction: column;
   padding: 20px 0px;
+  min-height: 90vh;
 }
 
 .homeTitle {
+  font-family: "gilroyBold";
   padding: 30px;
   text-align: center;
-  font-size: 45px;
+  font-size: 110px;
   font-weight: bolder;
-  width: 600px;
+  width: 1300px;
+  letter-spacing: -3.5px;
+  white-space: pre-line;
 }
 
 .homeDesc {
   text-align: center;
-  width: 700px;
-  font-size: 17px;
+  width: 1000px;
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+.homeButtons {
+  font-family: "gilroySemiBold";
+  margin-top: 3%;
+  background-color: black;
+  color: white;
+  padding: 20px 35px;
+  border: 1px solid black;
+  font-size: 25px;
+}
+
+.homeButtons:hover {
+  font-family: "gilroySemiBold";
+  color: #000;
+  background-color: white;
+  border: 1px solid black;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.SlideContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  min-height: 90vh;
+  background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/deserve-more-bg.jpg);
+  background-size: cover;
 }
 
 .clientContainer {
@@ -25,6 +59,7 @@
   align-items: center;
   justify-content: center;
   padding: 50px 0px;
+  min-height: 90vh;
 }
 
 .clientCont {
@@ -35,15 +70,38 @@
 }
 
 .clientTitle {
+  padding-bottom: 30px;
+  font-family: "gilroyBold";
   padding-bottom: 10px;
-  font-size: 35px;
-  width: 550px;
+  font-size: 65px;
+  width: 700px;
+  letter-spacing: -3px;
 }
 
 .clientDesc {
+  font-family: "gilroy";
   text-align: left;
   width: 550px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.clientButtons {
+  font-family: "gilroySemiBold";
+  margin-top: 3%;
+  background-color: black;
+  color: white;
+  padding: 15px 30px;
+  border: 1px solid black;
+  font-size: 20px;
+}
+
+.clientButtons:hover {
+  font-family: "gilroySemiBold";
+  color: #000;
+  background-color: white;
+  border: 1px solid black;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
 }
 
 .Buttons {

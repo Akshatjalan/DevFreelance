@@ -12,7 +12,8 @@ function Home() {
     <>
       <div className="homeContainer">
         <div className="homeTitle">
-          Hire top-notch developers for your projects on CodeLance.
+          Hire perfect developers for your projects.
+          {/* HIRE THE PERFECT DEVELOPERS FOR YOUR PROJECTS ON CODELANCE. */}
         </div>
         <div className="homeDesc">
           CodeLance provides a dedicated platform for clients to easily find and
@@ -20,13 +21,17 @@ function Home() {
           and collaboration features, you can ensure successful project
           outcomes.
         </div>
+        <button className="homeButtons">Hire Developers</button>
       </div>
-      <div>
-        <Slides slidesToShow={5} arrowsScroll={2}>
-          {cards.map((card) => (
-            <CatCard key={card.id} card={card} />
-          ))}
-        </Slides>
+
+      <div className="SlideContainer">
+        <>
+          <Slides slidesToShow={5} arrowsScroll={2}>
+            {cards.map((card) => (
+              <CatCard key={card.id} card={card} />
+            ))}
+          </Slides>
+        </>
       </div>
 
       <div className="clientContainer">
@@ -41,7 +46,7 @@ function Home() {
               developers to find gigs and showcase their skills. Join codeLance
               community and unlock a world of exciting Opportunites
             </div>
-            <button className="Buttons">Become Developer</button>
+            <button className="clientButtons">Become Developer</button>
           </div>
           <img src={freelancerPic} height="480px" alt="" />
         </div>
