@@ -12,7 +12,7 @@
   text-align: center;
   font-size: 110px;
   font-weight: bolder;
-  width: 1300px;
+  width: 1200px;
   letter-spacing: -3.5px;
   white-space: pre-line;
   line-height: 125px;
@@ -22,6 +22,7 @@
   text-align: center;
   width: 1000px;
   font-size: 30px;
+
   letter-spacing: -1px;
 }
 
@@ -51,8 +52,6 @@
   flex-direction: column;
   min-height: 100vh;
   background-color: #000;
-  /* background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/deserve-more-bg.jpg); */
-  background-size: cover;
 }
 
 .SlideTitle {
@@ -67,6 +66,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -110,6 +110,10 @@
   border: 1px solid black;
   transition: all ease-in-out 0.3s;
   cursor: pointer;
+}
+
+.clientImg {
+  height: 550px;
 }
 
 .Buttons {
@@ -185,4 +189,96 @@
   position: absolute;
   font-size: 14px;
   color: black;
+}
+
+@media (max-width: 1550px) {
+  .homeContainer {
+    min-height: 40vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .homeTitle {
+    padding: 30px;
+    text-align: center;
+    font-size: 45px;
+    width: 70%;
+    line-height: normal;
+    letter-spacing: -1.5px;
+    white-space: pre-line;
+  }
+
+  .homeDesc {
+    text-align: center;
+    width: 70%;
+    font-size: 18px;
+  }
+
+  .homeButtons {
+    padding: 15px 25px;
+    border: 1px solid black;
+    font-size: 18px;
+  }
+  .clientContainer {
+    margin-top: 20px;
+    min-height: 50vh;
+  }
+  .clientCont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  .clientCont div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .clientTitle {
+    padding-bottom: 30px;
+    font-family: "gilroyBold";
+    padding-bottom: 10px;
+    font-size: 30px;
+    width: 95%;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+
+  .clientDesc {
+    text-align: center;
+    width: 90%;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .clientButtons {
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-size: 16px;
+  }
+
+  .clientImg {
+    height: 250px;
+  }
+
+  .Buttons {
+    padding: 8px 11px;
+  }
+
+  .Buttons1 {
+    padding: 8px 11px;
+    font-size: 15px;
+  }
+
+  .SlideContainer {
+    min-height: 50vh;
+  }
+
+  .SlideTitle {
+    padding-bottom: 30px;
+    font-family: "gilroyBold";
+    font-size: 35px;
+    letter-spacing: -1px;
+  }
 }

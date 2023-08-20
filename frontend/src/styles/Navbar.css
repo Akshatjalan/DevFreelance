@@ -88,7 +88,25 @@
 }
 
 .nav_links:hover {
-  font-family: "gilroy";
+  color: rgba(0, 0, 0, 0.575);
   cursor: pointer;
-  transition: all ease-in-out 0.7s;
+  transition: all ease-in-out 0.3s;
+}
+
+@media (max-width: 1550px) {
+  .navContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+  }
+  .navbar {
+    position: static;
+  }
 }

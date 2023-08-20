@@ -23,11 +23,11 @@ function Gigs() {
     <div className="gigs">
       <div className="container">
         {/* <span className="breadcrumbs">Liverr > Graphics & Design ></span> */}
-        <h1>AI Artists</h1>
+        <h1>Web Development</h1>
         <p>
-          Explore the boundaries of art and technology with Liverr's AI artists
+          Explore the boundaries of development and technology with CodeLance.
         </p>
-        {/* <div className="menu">
+        <div className="menu">
           <div className="left">
             <span>Budget</span>
             <input ref={minRef} type="number" placeholder="min" />
@@ -51,7 +51,7 @@ function Gigs() {
               </div>
             )}
           </div>
-        </div> */}
+        </div>
         <div className="cards">
           {gigs.map((gig) => (
             <GigCard key={gig.id} item={gig} />

@@ -48,7 +48,7 @@ function Home() {
             </div>
             <button className="clientButtons">Join as Developer</button>
           </div>
-          <img src={freelancerPic} height="550px" alt="" />
+          <img className="clientImg" src={freelancerPic} alt="" />
         </div>
       </div>
 

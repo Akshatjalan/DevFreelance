@@ -38,3 +38,9 @@
 .carousel-prev:before {
   background-image: url(../assets/left-arrow.png) !important;
 }
+
+@media (max-width: 1550px) {
+  .slide {
+    display: none;
+  }
+}
