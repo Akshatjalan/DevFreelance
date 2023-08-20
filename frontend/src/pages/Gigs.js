@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { gigs } from "../data";
 import GigCard from "../components/GigCard";
 import "../styles/Gigs.css";
+import downIcon from "../assets/down.png";
 
 function Gigs() {
   const [sort, setSort] = useState("sales");
@@ -21,8 +22,8 @@ function Gigs() {
 
   return (
     <div className="gigs">
-      <div className="container">
-        {/* <span className="breadcrumbs">Liverr > Graphics & Design ></span> */}
+      <div className="gigsContainer">
+        <span className="breadcrumbs">Codelance ➤ Web Development</span>
         <h1>Web Development</h1>
         <p>
           Explore the boundaries of development and technology with CodeLance.
@@ -32,14 +33,16 @@ function Gigs() {
             <span>Budget</span>
             <input ref={minRef} type="number" placeholder="min" />
             <input ref={maxRef} type="number" placeholder="max" />
-            <button onClick={apply}>Apply</button>
+            <button className="budgetbutton" onClick={apply}>
+              Apply
+            </button>
           </div>
           <div className="right">
             <span className="sortBy">Sort by</span>
             <span className="sortType">
               {sort === "sales" ? "Best Selling" : "Newest"}
             </span>
-            <img src="./img/down.png" alt="" onClick={() => setOpen(!open)} />
+            <img src={downIcon} alt="" onClick={() => setOpen(!open)} />
             {open && (
               <div className="rightMenu">
                 {sort === "sales" ? (

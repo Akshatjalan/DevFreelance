@@ -10,19 +10,18 @@
   font-family: "gilroyBold";
   padding: 30px;
   text-align: center;
-  font-size: 110px;
+  font-size: 90px;
   font-weight: bolder;
-  width: 1200px;
+  width: 1000px;
   letter-spacing: -3.5px;
   white-space: pre-line;
-  line-height: 125px;
+  line-height: 100px;
 }
 
 .homeDesc {
   text-align: center;
   width: 1000px;
   font-size: 30px;
-
   letter-spacing: -1px;
 }
 

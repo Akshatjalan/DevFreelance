@@ -1,0 +1,13 @@
+.gig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.gigContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1400px;
+}

@@ -1,0 +1,107 @@
+.gigs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.gigsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+}
+
+.breadcrumbs {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #555;
+}
+
+.gigsContainer p {
+  color: #999;
+  font-weight: 300;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #555;
+  font-weight: 300;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid lightgrey;
+  outline: none;
+  border-radius: 2px;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+.budgetbutton {
+  font-family: "gilroySemiBold";
+  padding: 6px 18px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sortBy {
+  color: #555;
+  font-weight: 300;
+}
+
+.sortType {
+  font-weight: 500;
+}
+
+.right img {
+  width: 15px;
+  cursor: pointer;
+}
+
+.rightMenu {
+  padding: 20px;
+  background-color: white;
+  border: 0.5px solid lightgrey;
+  border-radius: 5px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #555;
+}
+
+.rightMenu span {
+  cursor: pointer;
+}
+
+.cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}

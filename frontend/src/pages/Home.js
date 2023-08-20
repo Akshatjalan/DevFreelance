@@ -2,10 +2,10 @@ import React from "react";
 import Slides from "../components/Slides";
 import CatCard from "../components/CatCard";
 import { cards } from "../data.js";
-import { projects } from "../data.js";
+// import { projects } from "../data.js";
+// import { Link } from "react-router-dom";
 import "../styles/Home.css";
 import freelancerPic from "../assets/undraw_Designer.png";
-import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -49,6 +49,28 @@ function Home() {
             <button className="clientButtons">Join as Developer</button>
           </div>
           <img className="clientImg" src={freelancerPic} alt="" />
+        </div>
+      </div>
+
+      <div className="clientContainer">
+        <div className="clientCont">
+          <img className="clientImg" src={freelancerPic} alt="" />
+          <div>
+            <div className="clientTitle">Why CodeLance</div>
+
+            <div className="clientDesc">
+              <ul>
+                <li>
+                  CodeLance provides 1 free Revision for every gig you ordered
+                </li>
+                <li>
+                  Urgent Delivery option, if your order is important we got you!
+                  (T&C applied)
+                </li>
+              </ul>
+            </div>
+            <button className="clientButtons"> Gigs here</button>
+          </div>
         </div>
       </div>
 
