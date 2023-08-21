@@ -8,6 +8,67 @@
 .gigContainer {
   display: flex;
   justify-content: center;
+  width: 1400px;
+  gap: 20px;
+}
+
+.gigLeft {
+  width: 65%;
+}
+
+.gigUser img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.gigRight {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #999;
+  margin-top: 50px;
+  height: 100%;
+  padding: 20px;
+  width: 35%;
+  gap: 20px;
+}
+
+.gigPrice {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  min-width: 1400px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.gigDetails {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.gigDetails span {
+  font-family: "gilroyBold";
+}
+
+@media (max-width: 1550px) {
+  .gigContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .gigRight {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #999;
+    margin-top: 50px;
+    padding: 20px;
+    width: 90%;
+    gap: 20px;
+  }
 }

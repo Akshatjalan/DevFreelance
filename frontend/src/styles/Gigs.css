@@ -105,3 +105,27 @@ input::placeholder {
   align-items: center;
   flex-wrap: wrap;
 }
+
+@media (max-width: 1450px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .gigsContainer h1 {
+    font-size: x-large;
+    margin-bottom: 1px;
+  }
+}

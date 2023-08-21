@@ -31,7 +31,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.user {
+.navUser {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -39,7 +39,7 @@
   position: relative;
 }
 
-.user img {
+.navUser img {
   width: 37px;
   height: 37px;
   border-radius: 50%;

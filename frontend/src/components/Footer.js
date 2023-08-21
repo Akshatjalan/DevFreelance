@@ -8,7 +8,7 @@ function Footer() {
       <div className="footerContainer">
         <div className="top">
           <img src={logo} height="40px" />
-          <div className="item">
+          <div className="footerItems">
             <h2>About</h2>
             <h2>Services</h2>
             <h2>Contact Us</h2>

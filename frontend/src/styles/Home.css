@@ -57,7 +57,7 @@
   color: white;
   padding-bottom: 30px;
   font-family: "gilroyBold";
-  font-size: 65px;
+  font-size: 60px;
   letter-spacing: -2px;
 }
 
@@ -80,7 +80,7 @@
   padding-bottom: 30px;
   font-family: "gilroyBold";
   padding-bottom: 10px;
-  font-size: 65px;
+  font-size: 60px;
   width: 700px;
   letter-spacing: -3px;
 }
@@ -145,6 +145,19 @@
   cursor: pointer;
 }
 
+.devButton {
+  background-color: white;
+  padding: 10px 20px;
+  border: 1px solid black;
+  font-size: 15px;
+}
+
+.devButton:hover {
+  color: white;
+  background-color: black;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
 .featuredTitle {
   display: flex;
   justify-content: center;
@@ -268,6 +281,10 @@
   .Buttons1 {
     padding: 8px 11px;
     font-size: 15px;
+  }
+
+  .devButton {
+    display: none;
   }
 
   .SlideContainer {

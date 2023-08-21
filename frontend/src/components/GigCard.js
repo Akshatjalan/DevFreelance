@@ -9,7 +9,7 @@ const GigCard = ({ item }) => {
       <div className="gigCard">
         <img className="gigImg" src={item.img} alt="" height="50px" />
         <div className="info">
-          <div className="user">
+          <div className="cardUser">
             <img src={item.pp} alt="" />
             <span>{item.username}</span>
           </div>

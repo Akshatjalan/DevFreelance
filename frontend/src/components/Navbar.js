@@ -7,13 +7,13 @@ import logo from "../assets/logo.png";
 function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const currentUser = null;
+  // const currentUser = null;
 
-  // const currentUser = {
-  //   id: 1,
-  //   username: "Akshat",
-  //   isSeller: true,
-  // };
+  const currentUser = {
+    id: 1,
+    username: "Akshat",
+    isSeller: false,
+  };
 
   return (
     <div className="navbar">
@@ -21,7 +21,7 @@ function Navbar() {
         <div className="logo">
           <Link className="link" to="/">
             {/* <span>CodeLance</span> */}
-            <img src={logo} height="47px" alt="" />
+            <img src={logo} height="45px" alt="" />
           </Link>
         </div>
         <div className="links">
@@ -32,10 +32,10 @@ function Navbar() {
             Discover Gigs
           </Link>
           {!currentUser?.isSeller && (
-            <button className="Buttons1">Become Developer</button>
+            <button className="devButton">Become Developer</button>
           )}
           {currentUser ? (
-            <div className="user" onClick={() => setOpen(!open)}>
+            <div className="navUser" onClick={() => setOpen(!open)}>
               <img src={profilePic} alt="" />
               <span className="nav_links">{currentUser?.username}</span>
               {open && (

@@ -20,12 +20,12 @@
   align-items: center;
   flex-direction: column;
 }
-.top .item {
+.top .footerItems {
   display: flex;
   gap: 20px;
 }
 
-.item h2 {
+.footerItems h2 {
   display: flex;
   justify-content: center;
   align-items: center;
