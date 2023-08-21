@@ -24,10 +24,11 @@
 }
 
 .gigRight {
+  position: sticky;
+  top: 20%;
   display: flex;
   flex-direction: column;
   border: 1px solid #999;
-  margin-top: 50px;
   height: 100%;
   padding: 20px;
   width: 35%;
@@ -55,6 +56,12 @@
 
 .gigDetails span {
   font-family: "gilroyBold";
+}
+
+.gigItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 @media (max-width: 1550px) {

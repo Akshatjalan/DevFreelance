@@ -38,11 +38,12 @@ function Gigs() {
             </button>
           </div>
           <div className="right">
-            <span className="sortBy">Sort by</span>
-            <span className="sortType">
+            <span className="sortBy">Sort by :</span>
+            <span className="sortType" onClick={() => setOpen(!open)}>
               {sort === "sales" ? "Best Selling" : "Newest"}
+
+              <img src={downIcon} alt="" onClick={() => setOpen(!open)} />
             </span>
-            <img src={downIcon} alt="" onClick={() => setOpen(!open)} />
             {open && (
               <div className="rightMenu">
                 {sort === "sales" ? (

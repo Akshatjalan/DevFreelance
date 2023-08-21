@@ -1,6 +1,8 @@
 import React from "react";
 import { Slider } from "infinite-react-carousel/lib";
 import "../styles/Gig.css";
+import clock from "../assets/clock.png";
+import recycle from "../assets/recycle.png";
 
 function Gig() {
   return (
@@ -233,11 +235,11 @@ function Gig() {
           </p>
           <div className="gigDetails">
             <div className="gigItem">
-              <img src="/img/clock.png" alt="" />
+              <img src={clock} alt="" height="20px" />
               <span>2 Days Delivery</span>
             </div>
             <div className="gigItem">
-              <img src="/img/recycle.png" alt="" />
+              <img src={recycle} alt="" height="20px" />
               <span>3 Revisions</span>
             </div>
           </div>
