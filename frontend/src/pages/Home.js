@@ -6,6 +6,7 @@ import { cards } from "../data.js";
 // import { Link } from "react-router-dom";
 import "../styles/Home.css";
 import freelancerPic from "../assets/undraw_Designer.png";
+import check from "../assets/check.png";
 
 function Home() {
   return (
@@ -25,7 +26,7 @@ function Home() {
 
       <div className="SlideContainer">
         <>
-          <div className="SlideTitle">Freelance Services</div>
+          <div className="SlideTitle">Our Freelance Services</div>
           <Slides slidesToShow={5} arrowsScroll={2}>
             {cards.map((card) => (
               <CatCard key={card.id} card={card} />
@@ -56,20 +57,25 @@ function Home() {
         <div className="clientCont">
           <img className="clientImg" src={freelancerPic} alt="" />
           <div>
-            <div className="clientTitle">Why CodeLance</div>
+            <div className="clientTitle">Why Choose CodeLance Services?</div>
 
             <div className="clientDesc">
               <ul>
                 <li>
-                  CodeLance provides 1 free Revision for every gig you ordered
+                  <img className="checkIcon" src={check} alt="" /> CodeLance
+                  provides 1 free Revision for every gig you ordered
                 </li>
                 <li>
-                  Urgent Delivery option, if your order is important we got you!
-                  (T&C applied)
+                  <img className="checkIcon" src={check} alt="" /> Urgent
+                  Delivery option, if your order is important we got you! (T&C
+                  applied)
+                </li>
+                <li>
+                  <img className="checkIcon" src={check} alt="" /> Your Payment
+                  isn't released until you approve the work
                 </li>
               </ul>
             </div>
-            <button className="clientButtons"> Gigs here</button>
           </div>
         </div>
       </div>

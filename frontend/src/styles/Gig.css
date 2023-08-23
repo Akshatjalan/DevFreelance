@@ -64,6 +64,10 @@
   gap: 10px;
 }
 
+.checkIcon {
+  height: 20px;
+}
+
 @media (max-width: 1550px) {
   .gigContainer {
     display: flex;

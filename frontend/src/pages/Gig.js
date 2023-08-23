@@ -3,6 +3,7 @@ import { Slider } from "infinite-react-carousel/lib";
 import "../styles/Gig.css";
 import clock from "../assets/clock.png";
 import recycle from "../assets/recycle.png";
+import check from "../assets/check.png";
 
 function Gig() {
   return (
@@ -245,19 +246,19 @@ function Gig() {
           </div>
           <div className="features">
             <div className="gigItem">
-              <img src="/img/greencheck.png" alt="" />
+              <img className="checkIcon" src={check} alt="" />
               <span>Prompt writing</span>
             </div>
             <div className="gigItem">
-              <img src="/img/greencheck.png" alt="" />
+              <img className="checkIcon" src={check} alt="" />
               <span>Artwork delivery</span>
             </div>
             <div className="gigItem">
-              <img src="/img/greencheck.png" alt="" />
+              <img className="checkIcon" src={check} alt="" />
               <span>Image upscaling</span>
             </div>
             <div className="gigItem">
-              <img src="/img/greencheck.png" alt="" />
+              <img className="checkIcon" src={check} alt="" />
               <span>Additional design</span>
             </div>
           </div>
