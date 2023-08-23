@@ -1,11 +1,11 @@
-<img src="/frontend/src/assets/codelance_logo.png" height="50px" align="right"/>
 
-<h1 align="center">CodeLance</h1>
+
+<h1 align="center"><img src="/frontend/public/CodeLancefavicon.ico" height="50px" align="left"/>CodeLance</h1>
 
 
 # CodeLance Description
 <h3>
-  CodeLance provides a dedicated freelancing platform for clients to easily find and hire skilled developers for their gigs. With seamless communication and collaboration features, you can ensure successful project outcomes.
+  CodeLance provides a dedicated freelancing platform for clients to find and hire skilled developers for their gigs easily. With seamless communication and collaboration features, you can ensure successful project outcomes.
 </h3>
 
 # Tools Used
