@@ -1,0 +1,33 @@
+.messages {
+  display: flex;
+  justify-content: center;
+  color: #555;
+}
+
+.messagesContainer {
+  width: 1400px;
+  padding: 50px 0px;
+}
+
+.messagesTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+tr.active {
+  background-color: #4e4e4e0f !important;
+}
+
+.markButton {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.messages tr {
+  background-color: white;
+  height: 80px;
+}

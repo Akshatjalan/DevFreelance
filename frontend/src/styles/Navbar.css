@@ -109,6 +109,11 @@
     gap: 18px;
     justify-content: center;
   }
+  .nav_links {
+    font-size: 15px;
+    font-family: "gilroy";
+  }
+
   .navbar {
     position: static;
   }

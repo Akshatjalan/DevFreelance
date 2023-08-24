@@ -19,7 +19,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 90vh;
+  min-height: 90dvh;
 }
 
 .homeTitle {
@@ -65,7 +65,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-color: #000;
 }
 
@@ -82,7 +82,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .clientCont {
@@ -221,16 +221,16 @@
 
 @media (max-width: 1550px) {
   .homeContainer {
-    min-height: 40vh;
     margin-top: 20px;
     margin-bottom: 20px;
+    min-height: 80dvh;
   }
 
   .homeTitle {
     padding: 30px;
     text-align: center;
     font-size: 40px;
-    width: 70%;
+    width: 90%;
     line-height: normal;
     letter-spacing: -2px;
     white-space: pre-line;
@@ -238,7 +238,7 @@
 
   .homeDesc {
     text-align: center;
-    width: 70%;
+    width: 80%;
     font-size: 18px;
   }
 
@@ -249,7 +249,6 @@
   }
   .clientContainer {
     margin-top: 20px;
-    min-height: 50vh;
   }
   .clientCont {
     display: flex;
@@ -302,15 +301,11 @@
   .devButton {
     display: none;
   }
-
-  .SlideContainer {
-    min-height: 50vh;
-  }
-
   .SlideTitle {
     padding-bottom: 30px;
-    font-family: "gilroyBold";
     font-size: 35px;
+    text-align: center;
+    width: 90%;
     letter-spacing: -1px;
   }
 }
