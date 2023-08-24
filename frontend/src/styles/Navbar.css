@@ -16,6 +16,10 @@
   color: black;
 }
 
+.logoImg {
+  height: 45px;
+}
+
 .navContainer {
   width: 1400px;
   display: flex;
@@ -102,11 +106,13 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
-    font-family: "Montserrat", sans-serif;
+    gap: 18px;
     justify-content: center;
   }
   .navbar {
     position: static;
+  }
+  .logoImg {
+    height: 35px;
   }
 }

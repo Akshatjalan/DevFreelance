@@ -1,9 +1,9 @@
 import React from "react";
-import { Slider } from "infinite-react-carousel/lib";
 import "../styles/Gig.css";
 import clock from "../assets/clock.png";
 import recycle from "../assets/recycle.png";
 import check from "../assets/check.png";
+import star from "../assets/star.png";
 
 function Gig() {
   return (
@@ -22,23 +22,20 @@ function Gig() {
             />
             <span>Akshat Jalan</span>
             <div className="gigStars">
-              <span>5 Star</span>
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <span>5</span>
             </div>
           </div>
-          {/* <Slider slidesToShow={1} arrowsScroll={1} className="slider">
-            <img
-              src="https://images.pexels.com/photos/1074535/pexels-photo-1074535.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt=""
-            />
-            <img
-              src="https://images.pexels.com/photos/1462935/pexels-photo-1462935.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt=""
-            />
+          <div className="gigSlider">
             <img
               src="https://images.pexels.com/photos/1054777/pexels-photo-1054777.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""
             />
-          </Slider> */}
+          </div>
           <h2>About This Gig</h2>
           <p>
             I use an UI program to create images based on text prompts. This
@@ -47,19 +44,20 @@ function Gig() {
           </p>
           <div className="seller">
             <h2>About The Seller</h2>
-            <div className="gigUser">
+            <div className="gigSellerUser">
               <img
+                className="gigSellerImg"
                 src="https://images.pexels.com/photos/720327/pexels-photo-720327.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt=""
               />
               <div className="gigInfo">
                 <span>Akshat Jalan</span>
                 <div className="gigStars">
-                  <img src="/img/star.png" alt="" />
-                  <img src="/img/star.png" alt="" />
-                  <img src="/img/star.png" alt="" />
-                  <img src="/img/star.png" alt="" />
-                  <img src="/img/star.png" alt="" />
+                  <img src={star} alt="" />
+                  <img src={star} alt="" />
+                  <img src={star} alt="" />
+                  <img src={star} alt="" />
+                  <img src={star} alt="" />
                   <span>5</span>
                 </div>
                 <button className="Buttons1">Contact Me</button>
@@ -68,24 +66,24 @@ function Gig() {
             <div className="box">
               <div className="boxItems">
                 <div className="boxItem">
-                  <span className="title">From</span>
-                  <span className="desc">INDIA</span>
+                  <span>From</span>
+                  <span>INDIA</span>
                 </div>
                 <div className="boxItem">
-                  <span className="title">Member since</span>
-                  <span className="desc">Aug 2023</span>
+                  <span>Member since</span>
+                  <span>Aug 2023</span>
                 </div>
                 <div className="boxItem">
-                  <span className="title">Avg. response time</span>
-                  <span className="desc">4 hours</span>
+                  <span>Avg. response time</span>
+                  <span>4 hours</span>
                 </div>
                 <div className="boxItem">
-                  <span className="title">Last delivery</span>
-                  <span className="desc">1 day</span>
+                  <span>Last delivery</span>
+                  <span>1 day</span>
                 </div>
                 <div className="boxItem">
-                  <span className="title">Languages</span>
-                  <span className="desc">English</span>
+                  <span>Languages</span>
+                  <span>English</span>
                 </div>
               </div>
               <hr />
@@ -99,9 +97,9 @@ function Gig() {
           <div className="reviews">
             <h2>Reviews</h2>
             <div className="reviewsItem">
-              <div className="gigUser">
+              <div className="reviewUser">
                 <img
-                  className="pp"
+                  className="reviewUserpp"
                   src="https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&w=1600"
                   alt=""
                 />
@@ -117,11 +115,11 @@ function Gig() {
                 </div>
               </div>
               <div className="gigStars">
-                <img src="/img/star.png" alt="" />
-                <img src="/img/star.png" alt="" />
-                <img src="/img/star.png" alt="" />
-                <img src="/img/star.png" alt="" />
-                <img src="/img/star.png" alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
                 <span>5</span>
               </div>
               <p>
@@ -132,19 +130,12 @@ function Gig() {
                 above and beyond my expectations. I absolutely recommend this
                 gig, and know already that Ill be using it again very very soon
               </p>
-              <div className="helpful">
-                <span>Helpful?</span>
-                <img src="/img/like.png" alt="" />
-                <span>Yes</span>
-                <img src="/img/dislike.png" alt="" />
-                <span>No</span>
-              </div>
             </div>
             <hr />
             <div className="reviewsItem">
-              <div className="gigUser">
+              <div className="reviewUser">
                 <img
-                  className="pp"
+                  className="reviewUserpp"
                   src="https://images.pexels.com/photos/4124367/pexels-photo-4124367.jpeg?auto=compress&cs=tinysrgb&w=1600"
                   alt=""
                 />
@@ -160,11 +151,11 @@ function Gig() {
                 </div>
               </div>
               <div className="gigStars">
-                <img src="/img/star.png" alt="" />
-                <img src="/img/star.png" alt="" />
-                <img src="/img/star.png" alt="" />
-                <img src="/img/star.png" alt="" />
-                <img src="/img/star.png" alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
                 <span>5</span>
               </div>
               <p>
@@ -173,19 +164,12 @@ function Gig() {
                 punctuality is above industry standards!! Whatever your project
                 is, you need this designer!
               </p>
-              <div className="helpful">
-                <span>Helpful?</span>
-                <img src="/img/like.png" alt="" />
-                <span>Yes</span>
-                <img src="/img/dislike.png" alt="" />
-                <span>No</span>
-              </div>
             </div>
             <hr />
             <div className="reviewsItem">
-              <div className="gigUser">
+              <div className="reviewUser">
                 <img
-                  className="pp"
+                  className="reviewUserpp"
                   src="https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1600"
                   alt=""
                 />
@@ -201,11 +185,11 @@ function Gig() {
                 </div>
               </div>
               <div className="gigStars">
-                <img src="/img/star.png" alt="" />
-                <img src="/img/star.png" alt="" />
-                <img src="/img/star.png" alt="" />
-                <img src="/img/star.png" alt="" />
-                <img src="/img/star.png" alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
                 <span>5</span>
               </div>
               <p>
@@ -215,13 +199,6 @@ function Gig() {
                 expectations. I absolutely recommend this gig, and know already
                 that Ill be using it again very very soon
               </p>
-              <div className="helpful">
-                <span>Helpful?</span>
-                <img src="/img/like.png" alt="" />
-                <span>Yes</span>
-                <img src="/img/dislike.png" alt="" />
-                <span>No</span>
-              </div>
             </div>
           </div>
         </div>

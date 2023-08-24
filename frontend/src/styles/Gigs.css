@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  margin: 50px;
 }
 
 .gigsContainer {
@@ -139,5 +139,11 @@ input::placeholder {
   .gigsContainer h1 {
     font-size: x-large;
     margin-bottom: 1px;
+  }
+  .breadcrumbs {
+    display: none;
+  }
+  .gigs {
+    margin: 20px;
   }
 }

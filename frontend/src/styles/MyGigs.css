@@ -1,0 +1,40 @@
+.myGigs {
+  display: flex;
+  justify-content: center;
+  color: #555;
+}
+
+.myGigsContainer {
+  width: 1400px;
+  padding: 50px 0px;
+}
+
+.myGigsTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+}
+
+.image {
+  width: 50px;
+  height: 25px;
+  object-fit: cover;
+}
+
+tr {
+  height: 50px;
+}
+th {
+  text-align: left;
+}
+.delete {
+  width: 20px;
+  cursor: pointer;
+}
+tr:nth-child(even) {
+  background-color: #4e4e4e0f;
+}

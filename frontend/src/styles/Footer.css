@@ -40,3 +40,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: 1450px) {
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+  }
+}

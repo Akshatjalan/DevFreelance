@@ -1,0 +1,16 @@
+.orders {
+  display: flex;
+  justify-content: center;
+  color: #555;
+}
+
+.ordersContainer {
+  width: 1400px;
+  padding: 50px 0px;
+}
+
+.ordersTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

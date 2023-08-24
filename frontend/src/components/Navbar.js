@@ -12,7 +12,7 @@ function Navbar() {
   const currentUser = {
     id: 1,
     username: "Akshat",
-    isSeller: false,
+    isSeller: true,
   };
 
   return (
@@ -21,7 +21,7 @@ function Navbar() {
         <div className="logo">
           <Link className="link" to="/">
             {/* <span>CodeLance</span> */}
-            <img src={logo} height="45px" alt="" />
+            <img className="logoImg" src={logo} alt="" />
           </Link>
         </div>
         <div className="links">
