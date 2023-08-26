@@ -95,7 +95,6 @@
 .clientTitle {
   padding-bottom: 30px;
   font-family: "gilroyBold";
-  padding-bottom: 10px;
   font-size: 60px;
   width: 700px;
   letter-spacing: -3px;
@@ -219,6 +218,53 @@
   color: black;
 }
 
+.chooseContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 98dvh;
+}
+
+.chooseCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 1400px;
+}
+
+.choosetImg {
+  height: 350px;
+}
+
+.chooseTitle {
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: "gilroyBold";
+  font-size: 60px;
+  width: 800px;
+  letter-spacing: -3px;
+}
+
+.chooseDesc {
+  font-family: "gilroy";
+  text-align: left;
+  font-size: 20px;
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.points li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 @media (max-width: 1550px) {
   .homeContainer {
     margin-top: 20px;
@@ -230,7 +276,7 @@
     padding: 30px;
     text-align: center;
     font-size: 40px;
-    width: 90%;
+    width: 80%;
     line-height: normal;
     letter-spacing: -2px;
     white-space: pre-line;
@@ -246,10 +292,9 @@
     padding: 15px 25px;
     border: 1px solid black;
     font-size: 18px;
+    margin-top: 25px;
   }
-  .clientContainer {
-    margin-top: 20px;
-  }
+
   .clientCont {
     display: flex;
     align-items: center;
@@ -307,5 +352,27 @@
     text-align: center;
     width: 90%;
     letter-spacing: -1px;
+  }
+
+  .chooseContainer {
+    height: 100vh;
+  }
+
+  .chooseTitle {
+    font-size: 30px;
+    width: 95%;
+    letter-spacing: -1px;
+  }
+
+  .chooseDesc {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .choosetImg {
+    height: 200px;
+  }
+  .chooseCont {
+    width: 90%;
   }
 }

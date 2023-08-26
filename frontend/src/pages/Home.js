@@ -6,6 +6,7 @@ import { cards } from "../data.js";
 // import { Link } from "react-router-dom";
 import "../styles/Home.css";
 import freelancerPic from "../assets/undraw_Designer.png";
+import WhyChoosePic from "../assets/undraw_My_answer.png";
 import check from "../assets/check.png";
 
 function Home() {
@@ -35,6 +36,46 @@ function Home() {
         </>
       </div>
 
+      <div className="chooseContainer">
+        <div className="chooseCont">
+          <img className="choosetImg" src={WhyChoosePic} alt="" />
+          <div>
+            <div className="chooseTitle">Why Choose CodeLance Services?</div>
+
+            <div className="chooseDesc">
+              <ul className="points">
+                <li>
+                  <img className="checkIcon" src={check} alt="" /> Find
+                  developers with the exact skills your project needs, ensuring
+                  high-quality results.
+                </li>
+                <li>
+                  <img className="checkIcon" src={check} alt="" /> Get one free
+                  revision with every project, ensuring satisfaction.
+                </li>
+                <li>
+                  <img className="checkIcon" src={check} alt="" /> Need it
+                  urgently? Opt for our expedited delivery option (T&C applied).
+                </li>
+                <li>
+                  <img className="checkIcon" src={check} alt="" /> Your Payment
+                  isn't released until you approve the work
+                </li>
+                <li>
+                  <img className="checkIcon" src={check} alt="" /> Real-time
+                  code collaboration and direct communication for seamless
+                  execution.
+                </li>
+                <li>
+                  <img className="checkIcon" src={check} alt="" />
+                  Trustworthy payment gateway for worry-free transactions.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="clientContainer">
         <div className="clientCont">
           <div>
@@ -50,33 +91,6 @@ function Home() {
             <button className="clientButtons">Join as Developer</button>
           </div>
           <img className="clientImg" src={freelancerPic} alt="" />
-        </div>
-      </div>
-
-      <div className="clientContainer">
-        <div className="clientCont">
-          <img className="clientImg" src={freelancerPic} alt="" />
-          <div>
-            <div className="clientTitle">Why Choose CodeLance Services?</div>
-
-            <div className="clientDesc">
-              <ul>
-                <li>
-                  <img className="checkIcon" src={check} alt="" /> CodeLance
-                  provides 1 free Revision for every gig you ordered
-                </li>
-                <li>
-                  <img className="checkIcon" src={check} alt="" /> Urgent
-                  Delivery option, if your order is important we got you! (T&C
-                  applied)
-                </li>
-                <li>
-                  <img className="checkIcon" src={check} alt="" /> Your Payment
-                  isn't released until you approve the work
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
 
