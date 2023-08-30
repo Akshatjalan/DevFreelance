@@ -59,7 +59,7 @@ function Home() {
                 </li>
                 <li>
                   <img className="checkIcon" src={check} alt="" /> Your Payment
-                  isn't released until you approve the work
+                  isn't released until you approve the work.
                 </li>
                 <li>
                   <img className="checkIcon" src={check} alt="" /> Real-time
@@ -93,27 +93,6 @@ function Home() {
           <img className="clientImg" src={freelancerPic} alt="" />
         </div>
       </div>
-
-      {/* <div className="clientContainer">
-        <div className="clientCont">
-          <div>
-            <div className="featuredTitle">Featured Work</div>
-            <div className="featuredContainer">
-              {projects.map((card) => (
-                <Link to="/gigs?cat=design">
-                  <div className="featureCard">
-                    <img src={card.img} alt="" />
-                    <br />
-                    <span className="featureCardCat">{card.cat}</span>
-                    <br />
-                    <span className="featureCardName">{card.username}</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 }
