@@ -16,5 +16,5 @@ const connectDB = async () => {
 
 app.listen(8800, () => {
   connectDB();
-  console.log("SUP");
+  console.log("connected");
 });
