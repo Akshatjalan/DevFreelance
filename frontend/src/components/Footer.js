@@ -17,7 +17,7 @@ function Footer() {
         </div>
 
         <div className="bottom">
-          <span>© 2023 CodeLance. All rights reserved.</span>
+          <span>© 2025 CodeLance. All rights reserved.</span>
           <span>Made by Akshat Jalan.</span>
         </div>
       </div>
