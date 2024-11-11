@@ -6,21 +6,23 @@ export const createGig = async (req, res, next) => {
     return next(createError(403, "Only sellers can create a gig!"));
 
   const newGig = new Gig({
-    userId: req.userId,
+    userId: req.userId, //this userId we are getting from JWT to ensure authorization of the user is correct
     ...req.body,
   });
 
   try {
-    const savedGig = await newGig.save();
+    const savedGig = await newGig.save(); //save is mongodb command
     res.status(201).json(savedGig);
   } catch (err) {
     next(err);
   }
 };
+
 export const deleteGig = async (req, res, next) => {
   try {
     const gig = await Gig.findById(req.params.id);
     if (gig.userId !== req.userId)
+      //check for gig's userId(creator) and request user id are same or not
       return next(createError(403, "You can delete only your gig!"));
 
     await Gig.findByIdAndDelete(req.params.id);
@@ -29,6 +31,7 @@ export const deleteGig = async (req, res, next) => {
     next(err);
   }
 };
+
 export const getGig = async (req, res, next) => {
   try {
     const gig = await Gig.findById(req.params.id);
@@ -38,8 +41,10 @@ export const getGig = async (req, res, next) => {
     next(err);
   }
 };
+
 export const getGigs = async (req, res, next) => {
   const q = req.query;
+
   const filters = {
     ...(q.userId && { userId: q.userId }),
     ...(q.cat && { cat: q.cat }),
@@ -51,6 +56,7 @@ export const getGigs = async (req, res, next) => {
     }),
     ...(q.search && { title: { $regex: q.search, $options: "i" } }),
   };
+
   try {
     const gigs = await Gig.find(filters).sort({ [q.sort]: -1 });
     res.status(200).send(gigs);

@@ -7,7 +7,7 @@ function Footer() {
     <div className="footer">
       <div className="footerContainer">
         <div className="top">
-          <img src={logo} height="40px" />
+          <img src={logo} height="40px" alt="Codelance" />
           <div className="footerItems">
             <h2>About</h2>
             <h2>Services</h2>

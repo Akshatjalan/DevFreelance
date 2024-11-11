@@ -1,18 +1,27 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/Navbar.css";
 import profilePic from "../assets/undraw_Male_avatar.png";
 import logo from "../assets/logo.png";
+import newRequest from "../utils/newRequest";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
 
   // const currentUser = null;
 
-  const currentUser = {
-    id: 1,
-    username: "Akshat",
-    isSeller: true,
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    try {
+      await newRequest.post("/auth/logout");
+      localStorage.setItem("currentUser", null);
+      navigate("/");
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
@@ -56,7 +65,7 @@ function Navbar() {
                   <Link className="options_link" to="/messages">
                     Messages
                   </Link>
-                  <Link className="options_link" to="/">
+                  <Link className="options_link" onClick={handleLogout}>
                     Logout
                   </Link>
                 </div>

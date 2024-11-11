@@ -11,7 +11,7 @@ export const register = async (req, res, next) => {
       password: hash,
     }); //passing whole body(username, email etc.. and encrypted password)
 
-    await newUser.save();
+    await newUser.save(); //save is mongodb command
     res.status(201).send("User has been created.");
   } catch (err) {
     next(err);
