@@ -16,8 +16,16 @@
   margin-bottom: 20px;
 }
 
-.register .left,
-.right {
+.register .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.register .right {
   flex: 1;
   display: flex;
   flex-direction: column;
