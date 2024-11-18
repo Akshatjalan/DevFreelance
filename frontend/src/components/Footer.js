@@ -1,19 +1,21 @@
 import React from "react";
 import "../styles/Footer.css";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <div className="footer">
       <div className="footerContainer">
         <div className="top">
-          <img src={logo} height="40px" alt="Codelance" />
-          <div className="footerItems">
+          <Link className="link" to="/">
+            <img src={logo} height="40px" alt="Codelance" />
+          </Link>
+          {/* <div className="footerItems">
             <h2>About</h2>
             <h2>Services</h2>
             <h2>Contact Us</h2>
-            <h2>About</h2>
-          </div>
+          </div> */}
         </div>
 
         <div className="bottom">
