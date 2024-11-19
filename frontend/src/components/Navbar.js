@@ -35,7 +35,7 @@ function Navbar() {
         </div>
         <div className="links">
           <Link className="nav_links" to="/">
-            Find Developers
+            Hire Developers
           </Link>
           <Link className="nav_links" to="/gigs">
             Discover Gigs
