@@ -7,6 +7,7 @@ import { cards } from "../data.js";
 import "../styles/Home.css";
 import freelancerPic from "../assets/undraw_Designer.png";
 import WhyChoosePic from "../assets/undraw_My_answer.png";
+import heroImg from "../assets/undraw_team_page.svg";
 import check from "../assets/check.png";
 
 function Home() {
@@ -14,7 +15,7 @@ function Home() {
     <>
       <div className="homeContainer">
         <div className="homeTitle">
-          Hire perfect developers for your projects.
+          Hire perfect <span>Developers</span> for your projects<span>.</span>
         </div>
         <div className="homeDesc">
           CodeLance provides a dedicated platform for clients to easily find and
@@ -22,12 +23,16 @@ function Home() {
           and collaboration features, you can ensure successful project
           outcomes.
         </div>
-        <button className="homeButtons">Hire Developers</button>
+        <img className="heroLeftImg" src={heroImg} alt="heroImg" />
+        <img className="heroRightImg" src={heroImg} alt="heroImg" />
+        <button className="homeButtons">Find your next Hire</button>
       </div>
 
       <div className="SlideContainer">
         <>
-          <div className="SlideTitle">Our Freelance Services</div>
+          <div className="SlideTitle">
+            Our Freelance Services<span>.</span>
+          </div>
           <Slides slidesToShow={5} arrowsScroll={2}>
             {cards.map((card) => (
               <CatCard key={card.id} card={card} />
@@ -40,7 +45,7 @@ function Home() {
         <div className="chooseCont">
           <img className="choosetImg" src={WhyChoosePic} alt="" />
           <div>
-            <div className="chooseTitle">Why Choose CodeLance Services?</div>
+            <div className="chooseTitle">Why Choose CodeLance ?</div>
 
             <div className="chooseDesc">
               <ul className="points">
