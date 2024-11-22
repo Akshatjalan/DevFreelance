@@ -59,10 +59,6 @@ function Home() {
                   revision with every project, ensuring satisfaction.
                 </li>
                 <li>
-                  <img className="checkIcon" src={check} alt="" /> Need it
-                  urgently? Opt for our expedited delivery option (T&C applied).
-                </li>
-                <li>
                   <img className="checkIcon" src={check} alt="" /> Your Payment
                   isn't released until you approve the work.
                 </li>
