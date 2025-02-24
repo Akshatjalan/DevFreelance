@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.01decbac.css",
-    "main.js": "/static/js/main.7627ebec.js",
+    "main.css": "/static/css/main.db80afb0.css",
+    "main.js": "/static/js/main.722759bb.js",
     "static/media/Gilroy-Regular.ttf": "/static/media/Gilroy-Regular.5b89a8df3b17dccdb73f.ttf",
     "static/media/Gilroy-SemiBold.ttf": "/static/media/Gilroy-SemiBold.07b9100a72fe7d46d20a.ttf",
     "static/media/Gilroy-Bold.ttf": "/static/media/Gilroy-Bold.ca49f7658c4eaac78b6d.ttf",
@@ -21,11 +21,11 @@
     "static/media/undraw_team_page.svg": "/static/media/undraw_team_page.621e4f2d2fda390d43eea5eea8e7e7c9.svg",
     "static/media/recycle.png": "/static/media/recycle.2873b5881eee1c4cd63c.png",
     "index.html": "/index.html",
-    "main.01decbac.css.map": "/static/css/main.01decbac.css.map",
-    "main.7627ebec.js.map": "/static/js/main.7627ebec.js.map"
+    "main.db80afb0.css.map": "/static/css/main.db80afb0.css.map",
+    "main.722759bb.js.map": "/static/js/main.722759bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.01decbac.css",
-    "static/js/main.7627ebec.js"
+    "static/css/main.db80afb0.css",
+    "static/js/main.722759bb.js"
   ]
 }
