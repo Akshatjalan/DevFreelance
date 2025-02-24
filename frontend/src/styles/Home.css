@@ -351,9 +351,8 @@
 
 @media (max-width: 1550px) {
   .homeContainer {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    min-height: 80dvh;
+    margin-bottom: 30px;
+    min-height: 60dvh;
   }
 
   .homeTitle {
@@ -459,5 +458,13 @@
   }
   .chooseCont {
     width: 90%;
+  }
+
+  .heroLeftImg {
+    display: none;
+  }
+
+  .heroRightImg {
+    display: none;
   }
 }

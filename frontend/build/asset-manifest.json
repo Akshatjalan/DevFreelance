@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.01decbac.css",
+    "main.js": "/static/js/main.7627ebec.js",
+    "static/media/Gilroy-Regular.ttf": "/static/media/Gilroy-Regular.5b89a8df3b17dccdb73f.ttf",
+    "static/media/Gilroy-SemiBold.ttf": "/static/media/Gilroy-SemiBold.07b9100a72fe7d46d20a.ttf",
+    "static/media/Gilroy-Bold.ttf": "/static/media/Gilroy-Bold.ca49f7658c4eaac78b6d.ttf",
+    "static/media/undraw_Designer.png": "/static/media/undraw_Designer.439a18936de62473caf2.png",
+    "static/media/undraw_Prototyping.png": "/static/media/undraw_Prototyping.00be9854c1300fcda9b5.png",
+    "static/media/undraw_building_websites.png": "/static/media/undraw_building_websites.105d5c2185c947e518e8.png",
+    "static/media/undraw_Mobile_development.png": "/static/media/undraw_Mobile_development.8a3f0abc2f5f73dec373.png",
+    "static/media/logo.png": "/static/media/logo.c33e5517e287ec70c737.png",
+    "static/media/undraw_ecommerce.png": "/static/media/undraw_ecommerce.6b5753c7fc4c4b1eba9b.png",
+    "static/media/undraw_testing.png": "/static/media/undraw_testing.85079cacf18c03934f2c.png",
+    "static/media/undraw_Male_avatar.png": "/static/media/undraw_Male_avatar.05888c1a6b5fea86dba6.png",
+    "static/media/undraw_My_answer.png": "/static/media/undraw_My_answer.e5adaa9d73df0ebf8d16.png",
+    "static/media/undraw_Maintenance.png": "/static/media/undraw_Maintenance.6cac4b9d18bd50be05de.png",
+    "static/media/undraw_Code_review.png": "/static/media/undraw_Code_review.3f3f7dfd753e994a9959.png",
+    "static/media/clock.png": "/static/media/clock.dc550a9f52c407d30fa5.png",
+    "static/media/undraw_Server.png": "/static/media/undraw_Server.402c69a70d9b963491bd.png",
+    "static/media/undraw_team_page.svg": "/static/media/undraw_team_page.621e4f2d2fda390d43eea5eea8e7e7c9.svg",
+    "static/media/recycle.png": "/static/media/recycle.2873b5881eee1c4cd63c.png",
+    "index.html": "/index.html",
+    "main.01decbac.css.map": "/static/css/main.01decbac.css.map",
+    "main.7627ebec.js.map": "/static/js/main.7627ebec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01decbac.css",
+    "static/js/main.7627ebec.js"
+  ]
+}
