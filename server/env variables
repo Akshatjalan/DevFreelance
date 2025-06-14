@@ -1,0 +1,2 @@
+MONGO = mongodb+srv://akshat:Forever131199@codelancecluster.9mamc.mongodb.net/?retryWrites=true&w=majority&appName=CodeLanceCluster&dbname=Codelance
+JWT_KEY = 45445a93dede5f6fcfad3c8cde0f3053
