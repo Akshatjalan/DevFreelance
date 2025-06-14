@@ -73,7 +73,7 @@ function Navbar() {
             </div>
           ) : (
             <>
-              {/* <Link className="nav_links">Sign in</Link> */}
+              <Link className="nav_links" to="/login">Sign in</Link>
               <Link className="link" to="/register">
                 <button className="Buttons">Sign Up</button>
               </Link>
