@@ -46,8 +46,8 @@ function Gigs() {
   return (
     <div className="gigs">
       <div className="gigsContainer">
-        <span className="breadcrumbs">Codelance ➤ Web Development</span>
-        <h1>Web Development</h1>
+        <span className="breadcrumbs">Codelance {">"} Development</span>
+        <h1>Development</h1>
         <p>
           Explore the boundaries of development and technology with CodeLance.
         </p>

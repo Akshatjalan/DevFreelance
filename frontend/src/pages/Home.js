@@ -9,6 +9,7 @@ import freelancerPic from "../assets/undraw_Designer.png";
 import WhyChoosePic from "../assets/undraw_My_answer.png";
 import heroImg from "../assets/undraw_team_page.svg";
 import check from "../assets/check.png";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -25,7 +26,11 @@ function Home() {
         </div>
         <img className="heroLeftImg" src={heroImg} alt="heroImg" />
         <img className="heroRightImg" src={heroImg} alt="heroImg" />
-        <button className="homeButtons">Find your next Hire</button>
+        <Link to="/gigs?cat">
+          <button className="homeButtons">
+            Find your next Hire
+          </button>
+        </Link>
       </div>
 
       <div className="SlideContainer">
