@@ -8,7 +8,7 @@ CodeLance is a dedicated freelance platform connecting clients with skilled deve
 For developers, CodeLance offers a powerful marketplace to showcase their skills, find diverse project opportunities, and build strong client relationships. Whether you're looking to tackle small tasks or dive into full-scale projects, CodeLance provides the tools you need for professional growth and successful gig management.
 </p>
 
-### <code>Live Demo</code> - **[CodeLance](codelance-akshat.netlify.app)**
+### <code>Live Demo</code> - **[CodeLance](https://codelance-akshat.netlify.app)**
 
 # Preview
 
