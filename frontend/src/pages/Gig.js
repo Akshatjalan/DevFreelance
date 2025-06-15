@@ -19,22 +19,22 @@ function Gig() {
       }),
   });
 
-  const userId = data?.userId;
+  // const userId = data?.userId;
 
-  const {
-    isLoading: isLoadingUser,
-    error: errorUser,
-    data: dataUser,
-  } = useQuery({
-    queryKey: ["user"],
+  // const {
+  //   isLoading: isLoadingUser,
+  //   error: errorUser,
+  //   data: dataUser,
+  // } = useQuery({
+  //   queryKey: ["user"],
 
-    queryFn: () =>
-      newRequest.get(`/users/${userId}`).then((res) => {
-        return res.data;
-      }),
+  //   queryFn: () =>
+  //     newRequest.get(`/users/${userId}`).then((res) => {
+  //       return res.data;
+  //     }),
 
-    enabled: !!userId,
-  });
+  //   enabled: !!userId,
+  // });
 
   return (
     <div className="gig">
