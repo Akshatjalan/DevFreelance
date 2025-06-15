@@ -37,7 +37,7 @@ function Navbar() {
           <Link className="nav_links" to="/">
             Hire Developers
           </Link>
-          <Link className="nav_links" to="/gigs">
+          <Link className="nav_links" to="/gigs?cat">
             Discover Gigs
           </Link>
           {!currentUser?.isSeller && (
