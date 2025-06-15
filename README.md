@@ -1,13 +1,18 @@
-<h1 align="center"><img src="/frontend/public/CodeLancefavicon.ico" height="50px" align="left"/>CodeLance</h1>
+<h1 align="center"><img src="/frontend/src/assets/Readmelogo.PNG" height="50px" align="center"/></h1>
 
-# CodeLance Description
+<p align="center">🚀 Excited to share my latest project — a Freelance platform for Developers! 👨‍💻✨
 
-<h3>
+<p>
 CodeLance is a dedicated freelance platform connecting clients with skilled developers for a wide range of projects, from bug fixing to complete project builds. With a focus on streamlined communication, CodeLance makes it easy for clients to bring their projects to life while ensuring high-quality results.
 <br><br/>
 For developers, CodeLance offers a powerful marketplace to showcase their skills, find diverse project opportunities, and build strong client relationships. Whether you're looking to tackle small tasks or dive into full-scale projects, CodeLance provides the tools you need for professional growth and successful gig management.
+</p>
 
-</h3>
+### <code>Live Demo</code> - **[CodeLance](https://codelance-akshat.netlify.app)**
+
+# Preview
+
+ ![Alt text](https://github.com/Akshatjalan/Amazon-UI-Redesign/blob/main/Frontend/src/assets/redesignMock.png?raw=true "Main Page")
 
 # Tools Used
 
