@@ -41,7 +41,7 @@ input {
   padding: 5px;
   border: 1px solid lightgrey;
   outline: none;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 input::placeholder {
@@ -56,7 +56,7 @@ input::placeholder {
   border: none;
   font-weight: 500;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .right {
@@ -118,7 +118,7 @@ input::placeholder {
   flex-wrap: wrap;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1250px) {
   .cards {
     display: flex;
     justify-content: center;

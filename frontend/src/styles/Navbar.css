@@ -96,15 +96,14 @@
 }
 
 .nav_links:hover {
-  color: rgba(0, 0, 0, 0.575);
+  color: #e9304b;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1250px) {
   .navContainer {
     width: 80%;
-    flex-direction: column;
   }
   .links {
     display: flex;
@@ -114,8 +113,7 @@
     justify-content: center;
   }
   .nav_links {
-    font-size: 15px;
-    font-family: "gilroy";
+    display: none;
   }
 
   .navbar {

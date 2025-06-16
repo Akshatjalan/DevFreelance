@@ -253,7 +253,7 @@ function Gig() {
               </div>
             </div>
             <Link to={`/pay/${id}`}>
-              <button className="Buttons">Continue</button>
+              <button className="continueButton">Continue</button>
             </Link>
           </div>
         </div>

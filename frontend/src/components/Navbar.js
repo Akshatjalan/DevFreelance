@@ -34,14 +34,16 @@ function Navbar() {
           </Link>
         </div>
         <div className="links">
-          <Link className="nav_links" to="/">
+          {/* <Link className="nav_links" to="/">
             Hire Developers
-          </Link>
+          </Link> */}
           <Link className="nav_links" to="/gigs?cat">
             Discover Gigs
           </Link>
           {!currentUser?.isSeller && (
-            <button className="devButton">Become Developer</button>
+            <Link className="nav_links" to="/register">
+              Become Developer
+            </Link>
           )}
           {currentUser ? (
             <div className="navUser" onClick={() => setOpen(!open)}>
@@ -73,7 +75,9 @@ function Navbar() {
             </div>
           ) : (
             <>
-              <Link className="nav_links" to="/login">Sign in</Link>
+              <Link className="nav_links" to="/login">
+                Sign in
+              </Link>
               <Link className="link" to="/register">
                 <button className="Buttons">Sign Up</button>
               </Link>

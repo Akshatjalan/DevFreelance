@@ -195,6 +195,7 @@
   padding: 15px 30px;
   border: 1px solid #1c1e20;
   font-size: 20px;
+  border-radius: 8px;
 }
 
 .clientButtons:hover {
@@ -216,7 +217,7 @@
   padding: 10px 20px;
   border: 1px solid #1c1e20;
   font-size: 15px;
-  border-radius: 12px;
+  border-radius: 8px;
   font-weight: 600;
 }
 
@@ -232,6 +233,7 @@
   background-color: white;
   padding: 10px 20px;
   border: 1px solid #1c1e20;
+  border-radius: 8px;
   font-size: 15px;
 }
 
@@ -247,7 +249,7 @@
   padding: 10px 20px;
   border: 1px solid #1c1e20;
   font-size: 15px;
-  border-radius: 12px;
+  border-radius: 8px;
   font-weight: 600;
 }
 
@@ -352,13 +354,62 @@
 @media (max-width: 1550px) {
   .homeContainer {
     margin-bottom: 30px;
+  }
+
+  .homeTitle {
+    padding: 30px;
+    text-align: center;
+    font-size: 90px;
+    width: 60%;
+    letter-spacing: -2px;
+    white-space: pre-line;
+  }
+
+  .homeDesc {
+    text-align: center;
+    width: 60%;
+  }
+
+  .homeButtons {
+    padding: 15px 25px;
+    border: 1px solid #1c1e20;
+    border-radius: 8px;
+    margin-top: 25px;
+  }
+
+  .heroLeftImg {
+    width: 300px;
+  }
+
+  .heroRightImg {
+    width: 300px;
+  }
+
+  .heroLeftImg:hover {
+    width: 310px;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .heroRightImg:hover {
+    width: 310px;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .clientCont {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .homeContainer {
+    margin-bottom: 30px;
     min-height: 60dvh;
   }
 
   .homeTitle {
     padding: 30px;
     text-align: center;
-    font-size: 40px;
+    font-size: 70px;
     width: 80%;
     line-height: normal;
     letter-spacing: -2px;
@@ -368,7 +419,7 @@
   .homeDesc {
     text-align: center;
     width: 80%;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .homeButtons {
@@ -444,7 +495,7 @@
 
   .chooseTitle {
     font-size: 30px;
-    width: 95%;
+    width: 100%;
     letter-spacing: -1px;
   }
 
@@ -466,5 +517,21 @@
 
   .heroRightImg {
     display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .homeContainer {
+    margin-bottom: 30px;
+  }
+
+  .homeTitle {
+    padding: 30px;
+    text-align: center;
+    font-size: 55px;
+    width: 80%;
+    letter-spacing: 1px;
+    line-height: 50px;
+    white-space: pre-line;
   }
 }

@@ -172,6 +172,7 @@ hr {
   padding: 20px;
   width: 35%;
   gap: 20px;
+  border-radius: 5px;
 }
 
 .gigPrice {
@@ -207,7 +208,26 @@ hr {
   height: 20px;
 }
 
-@media (max-width: 1550px) {
+.continueButton {
+  background-color: #1c1e20;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid #1c1e20;
+  font-size: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.continueButton:hover {
+  color: #000;
+  background-color: white;
+  border: 1px solid #1c1e20;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+@media (max-width: 1250px) {
   .gigContainer {
     display: flex;
     flex-direction: column;
@@ -229,6 +249,7 @@ hr {
   .gigContainer h1 {
     font-size: x-large;
     margin-bottom: 1px;
+    text-align: center;
   }
   .gig {
     margin: 20px;
