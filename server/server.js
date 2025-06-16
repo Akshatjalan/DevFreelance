@@ -25,8 +25,10 @@ const connectDB = async () => {
 
 //middlewares
 app.use(cors({
-  origin: "*",
-  credentials: true
+  origin: [
+    'http://localhost:3000',
+    'https://codelance-akshat.netlify.app'
+  ]
 }));
 app.use(express.json());
 app.use(cookieParser());
