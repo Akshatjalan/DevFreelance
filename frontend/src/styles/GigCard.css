@@ -66,3 +66,81 @@
   font-size: 15px;
   text-align: end;
 }
+
+/* Placeholder */
+
+.gigCard.placeholder {
+  background: #f4f4f4;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  animation: pulse 1.5s infinite;
+}
+
+.placeholder-img {
+  width: 100%;
+  height: 200px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.placeholder-avatar {
+  width: 36px;
+  height: 36px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.placeholder-text {
+  display: inline-block;
+  background: #e0e0e0;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.placeholder-text.short {
+  width: 60px;
+  height: 14px;
+  margin-left: 8px;
+}
+
+.placeholder-text.long {
+  width: 80%;
+  height: 16px;
+  margin: 12px 0;
+}
+
+.placeholder-text.tiny {
+  width: 40px;
+  height: 12px;
+}
+
+.placeholder-text.medium {
+  width: 80px;
+  height: 18px;
+  margin-top: 8px;
+}
+
+.placeholder-star {
+  width: 18px;
+  height: 18px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #f4f4f4;
+  }
+  50% {
+    background-color: #e0e0e0;
+  }
+  100% {
+    background-color: #f4f4f4;
+  }
+}

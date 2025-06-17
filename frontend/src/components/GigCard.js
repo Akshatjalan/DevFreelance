@@ -14,35 +14,57 @@ const GigCard = ({ item }) => {
       }),
   });
 
+  const PlaceholderCard = () => (
+    <div className="gigCard placeholder">
+      <div className="gigImg placeholder-img" />
+      <div className="info">
+        <div className="cardUser">
+          <div className="placeholder-avatar" />
+          <span className="placeholder-text short" />
+        </div>
+        <p className="placeholder-text long" />
+        <div className="star">
+          <div>
+            <div className="starImg placeholder-star" />
+            <span className="placeholder-text short" />
+          </div>
+          <div className="price">
+            <span className="placeholder-text tiny" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <Link to={`/gig/${item._id}`} className="link">
-      <div className="gigCard">
-        <img className="gigImg" src={item.cover} alt="" />
-        <div className="info">
-          {isLoading ? (
-            "loading"
-          ) : error ? (
-            "Something went wrong!"
-          ) : (
+      {isLoading ? (
+        <PlaceholderCard />
+      ) : error ? (
+        "Something went wrong!"
+      ) : (
+        <div className="gigCard">
+          <img className="gigImg" src={item.cover} alt="" />
+          <div className="info">
             <div className="cardUser">
               <img src={item.images} alt="" />
               <span>{item.shortTitle}</span>
             </div>
-          )}
 
-          <p>{item.title}</p>
-          <div className="star">
-            <div>
-              <img className="starImg" src={starImg} alt="" />
-              <span>{item.totalStars}</span>
-            </div>
-            <div className="price">
-              <span>STARTING AT</span>
-              <h2>INR {item.price}</h2>
+            <p>{item.title}</p>
+            <div className="star">
+              <div>
+                <img className="starImg" src={starImg} alt="" />
+                <span>{item.totalStars}</span>
+              </div>
+              <div className="price">
+                <span>STARTING AT</span>
+                <h2>INR {item.price}</h2>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
     </Link>
   );
 };

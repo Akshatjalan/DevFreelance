@@ -527,11 +527,19 @@
 
   .homeTitle {
     padding: 30px;
+    padding-bottom: 20px;
     text-align: center;
-    font-size: 55px;
+    font-size: 50px;
     width: 80%;
     letter-spacing: 1px;
     line-height: 50px;
     white-space: pre-line;
+  }
+
+  .homeDesc {
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+    padding-bottom: 20px;
   }
 }

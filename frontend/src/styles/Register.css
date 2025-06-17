@@ -6,13 +6,13 @@
 
 .register form {
   width: 960px;
-  padding: 100px 0px;
+  padding: 40px 0px;
   display: flex;
   gap: 120px;
 }
 
 .register h1 {
-  color: gray;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -35,19 +35,20 @@
 }
 
 .register label {
-  color: gray;
+  color: black;
   font-size: 18px;
 }
 
 .register input {
   padding: 14px;
   border: 1px solid rgb(216, 214, 214);
+  border-radius: 8px;
 }
 
 .register textarea {
   padding: 14px;
   border: 1px solid rgb(216, 214, 214);
-  max-width: 500px;
+  max-width: 600px;
   max-height: 500px;
   min-width: 100px;
   min-height: 100px;
@@ -61,6 +62,7 @@
   font-size: 18px;
   background-color: #000000;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 .register .toggle {
@@ -121,4 +123,75 @@
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+}
+
+.loginLine {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.loginLine a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #e9304b;
+  transition: all ease-in-out 0.7s;
+}
+
+.loginLine a:hover {
+  color: #000;
+  transition: all ease-in-out 0.3s;
+}
+
+@media (max-width: 1024px) {
+  .register form {
+    width: 100%;
+    gap: 40px;
+    padding: 40px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .register form {
+    flex-direction: column;
+    width: 80%;
+    gap: 32px;
+    padding: 40px 10px;
+  }
+  .register .left,
+  .register .right {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .loginLine {
+  font-size: 18px;
+  text-align: center;
+}
+}
+
+@media (max-width: 480px) {
+  .register form {
+    width: 80%;
+    padding: 20px 4px;
+    gap: 32px;
+  }
+  .register h1 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .register label {
+    font-size: 15px;
+  }
+  .register input,
+  .register textarea {
+    padding: 20px;
+    font-size: 15px;
+  max-width: 250px;
+  }
+  .register button {
+    padding: 10px;
+    font-size: 16px;
+  }
 }
