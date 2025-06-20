@@ -217,11 +217,11 @@ hr {
   border-radius: 8px;
   font-weight: 600;
   width: 100%;
+  transition: all ease-in-out 0.5s;
 }
 
 .continueButton:hover {
-  color: #000;
-  background-color: white;
+  background-color: #424242;
   border: 1px solid #1c1e20;
   transition: all ease-in-out 0.3s;
   cursor: pointer;

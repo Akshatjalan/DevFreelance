@@ -56,18 +56,20 @@ function Register() {
             <input
               name="username"
               type="text"
-              placeholder="john doe"
+              placeholder="John doe"
               onChange={handleChange}
             />
             <label htmlFor="">Email</label>
             <input
               name="email"
               type="email"
-              placeholder="email"
+              placeholder="johndoe@mail.com"
               onChange={handleChange}
             />
             <label htmlFor="">Password</label>
-            <input name="password" type="password" onChange={handleChange} />
+            <input name="password" type="password" 
+              placeholder="********"
+            onChange={handleChange} />
             {/* <label htmlFor="">Profile Picture</label>
           <input type="file" onChange={(e) => setFile(e.target.files[0])} /> */}
             <label htmlFor="">Country</label>

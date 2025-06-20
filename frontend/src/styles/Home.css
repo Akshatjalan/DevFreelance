@@ -196,12 +196,12 @@
   border: 1px solid #1c1e20;
   font-size: 20px;
   border-radius: 8px;
+    transition: all ease-in-out 0.5s;
 }
 
 .clientButtons:hover {
   font-family: "gilroySemiBold";
-  color: #000;
-  background-color: white;
+  background-color: #424242;
   border: 1px solid #1c1e20;
   transition: all ease-in-out 0.3s;
   cursor: pointer;
@@ -219,11 +219,11 @@
   font-size: 15px;
   border-radius: 8px;
   font-weight: 600;
+  transition: all ease-in-out 0.5s;
 }
 
 .Buttons:hover {
-  color: #000;
-  background-color: white;
+  background-color: #424242;
   border: 1px solid #1c1e20;
   transition: all ease-in-out 0.3s;
   cursor: pointer;
@@ -235,13 +235,15 @@
   border: 1px solid #1c1e20;
   border-radius: 8px;
   font-size: 15px;
+  transition: all ease-in-out 0.5s;
 }
 
 .Buttons1:hover {
-  color: white;
-  background-color: #1c1e20;
   transition: all ease-in-out 0.3s;
   cursor: pointer;
+  color: white;
+  background-color: #424242;
+  transition: all ease-in-out 0.3s;
 }
 
 .devButton {
@@ -251,11 +253,11 @@
   font-size: 15px;
   border-radius: 8px;
   font-weight: 600;
+  transition: all ease-in-out 0.5s;
 }
 
 .devButton:hover {
-  color: white;
-  background-color: #1c1e20;
+  background-color: #424242;
   transition: all ease-in-out 0.3s;
   cursor: pointer;
 }

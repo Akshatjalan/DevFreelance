@@ -103,7 +103,9 @@ function Home() {
               developers to find gigs and showcase their skills. Join codeLance
               community and unlock a world of exciting Opportunites
             </div>
-            <button className="clientButtons">Join as Developer</button>
+            <Link to="/register">
+              <button className="clientButtons">Join as Developer</button>
+            </Link>
           </div>
           <img className="clientImg" src={freelancerPic} alt="" />
         </div>
