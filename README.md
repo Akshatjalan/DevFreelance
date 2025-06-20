@@ -12,7 +12,7 @@ For developers, CodeLance offers a powerful marketplace to showcase their skills
 
 # Preview
 
- ![Alt text](https://github.com/Akshatjalan/Amazon-UI-Redesign/blob/main/Frontend/src/assets/redesignMock.png?raw=true "Main Page")
+ ![Alt text](https://github.com/Akshatjalan/DevFreelance/blob/master/frontend/src/assets/mockup.png?raw=true "Main Page")
 
 # Tools Used
 
