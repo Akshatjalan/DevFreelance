@@ -333,6 +333,11 @@
   letter-spacing: -3px;
 }
 
+.chooseTitle span {
+  color: #e9304b;
+  font-family: "gilroyBold";
+}
+
 .chooseDesc {
   font-family: "gilroy";
   text-align: left;
@@ -349,6 +354,41 @@
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+/* .SlideCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  width: 100%;
+  overflow-x: scroll;
+} */
+
+.SlideCards {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.SlideCardsInner {
+  display: flex;
+  animation: scrollX 40s linear infinite;
+  gap: 20px;
+}
+
+@keyframes scrollX {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @media (max-width: 1550px) {

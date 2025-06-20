@@ -63,6 +63,12 @@
   background-color: #000000;
   cursor: pointer;
   border-radius: 8px;
+  transition: all ease-in-out 0.5s;
+}
+
+.register button:hover {
+  background-color: #333;
+  transition: all ease-in-out 0.3s;
 }
 
 .register .toggle {
@@ -166,9 +172,9 @@
   }
 
   .loginLine {
-  font-size: 18px;
-  text-align: center;
-}
+    font-size: 18px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -188,7 +194,7 @@
   .register textarea {
     padding: 20px;
     font-size: 15px;
-  max-width: 250px;
+    max-width: 250px;
   }
   .register button {
     padding: 10px;

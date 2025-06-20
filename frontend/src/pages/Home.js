@@ -1,5 +1,4 @@
 import React from "react";
-import Slides from "../components/Slides";
 import CatCard from "../components/CatCard";
 import { cards } from "../data.js";
 // import { projects } from "../data.js";
@@ -27,22 +26,30 @@ function Home() {
         <img className="heroLeftImg" src={heroImg} alt="heroImg" />
         <img className="heroRightImg" src={heroImg} alt="heroImg" />
         <Link to="/gigs?cat">
-          <button className="homeButtons">
-            Find your next Hire
-          </button>
+          <button className="homeButtons">Find your next Hire</button>
         </Link>
       </div>
 
       <div className="SlideContainer">
         <>
           <div className="SlideTitle">
-            Our Freelance Services<span>.</span>
+            Our <span>Freelance</span> Services<span>.</span>
           </div>
-          <Slides slidesToShow={5} arrowsScroll={2}>
+          {/* <div className="SlideCards">
             {cards.map((card) => (
               <CatCard key={card.id} card={card} />
             ))}
-          </Slides>
+          </div> */}
+          <div className="SlideCards">
+            <div className="SlideCardsInner">
+              {cards.map((card, idx) => (
+                <CatCard key={"first-" + card.id} card={card} />
+              ))}
+              {cards.map((card, idx) => (
+                <CatCard key={"second-" + card.id} card={card} />
+              ))}
+            </div>
+          </div>
         </>
       </div>
 
@@ -50,7 +57,9 @@ function Home() {
         <div className="chooseCont">
           <img className="choosetImg" src={WhyChoosePic} alt="" />
           <div>
-            <div className="chooseTitle">Why Choose CodeLance ?</div>
+            <div className="chooseTitle">
+              Why Choose <span>CodeLance?</span>
+            </div>
 
             <div className="chooseDesc">
               <ul className="points">
