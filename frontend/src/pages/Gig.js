@@ -39,7 +39,29 @@ function Gig() {
   return (
     <div className="gig">
       {isLoading ? (
-        "loading"
+        <div className="gigContainer">
+          <div className="gigLeft">
+            <div className="gig-skeleton-breadcrumbs" />
+            <div className="gig-skeleton-title" />
+            <div className="gigUser">
+              <div className="gig-skeleton-avatar" />
+              <div className="gig-skeleton-text gig-skeleton-short" />
+              <div className="gig-skeleton-stars" />
+            </div>
+            <div className="gigSlider">
+              <div className="gig-skeleton-img" />
+            </div>
+            <div className="gig-skeleton-section" />
+            <div className="gig-skeleton-section" />
+          </div>
+          <div className="gigRight">
+            <div className="gig-skeleton-price" />
+            <div className="gig-skeleton-shortdesc" />
+            <div className="gig-skeleton-details" />
+            <div className="gig-skeleton-features" />
+            <div className="gig-skeleton-button" />
+          </div>
+        </div>
       ) : error ? (
         "Something went wrong!"
       ) : (

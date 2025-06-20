@@ -87,7 +87,27 @@ function Gigs() {
 
         <div className="cards">
           {isLoading
-            ? "loading"
+            ? Array.from({ length: 4 }).map((_, idx) => (
+                <div className="gigCard placeholder" key={idx}>
+                  <div className="gigImg placeholder-img" />
+                  <div className="info">
+                    <div className="cardUser">
+                      <div className="placeholder-avatar" />
+                      <span className="placeholder-text short" />
+                    </div>
+                    <p className="placeholder-text long" />
+                    <div className="star">
+                      <div>
+                        <div className="starImg placeholder-star" />
+                        <span className="placeholder-text short" />
+                      </div>
+                      <div className="price">
+                        <span className="placeholder-text tiny" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))
             : error
             ? "Something went wrong!"
             : data.map((gig) => <GigCard key={gig._id} item={gig} />)}

@@ -255,3 +255,41 @@ hr {
     margin: 20px;
   }
 }
+
+/* Placeholders */
+.gig-skeleton-breadcrumbs,
+.gig-skeleton-title,
+.gig-skeleton-avatar,
+.gig-skeleton-text,
+.gig-skeleton-stars,
+.gig-skeleton-img,
+.gig-skeleton-section,
+.gig-skeleton-price,
+.gig-skeleton-shortdesc,
+.gig-skeleton-details,
+.gig-skeleton-features,
+.gig-skeleton-button {
+  background: #ececec;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  animation: gig-skeleton-pulse 1.5s infinite;
+}
+
+.gig-skeleton-breadcrumbs { width: 180px; height: 16px; }
+.gig-skeleton-title { width: 60%; height: 28px; }
+.gig-skeleton-avatar { width: 40px; height: 40px; border-radius: 50%; display: inline-block; }
+.gig-skeleton-text.gig-skeleton-short { width: 80px; height: 16px; display: inline-block; margin-left: 10px; }
+.gig-skeleton-stars { width: 60px; height: 16px; display: inline-block; margin-left: 10px; }
+.gig-skeleton-img { width: 100%; height: 220px; }
+.gig-skeleton-section { width: 100%; height: 40px; }
+.gig-skeleton-price { width: 80px; height: 28px; }
+.gig-skeleton-shortdesc { width: 100%; height: 20px; }
+.gig-skeleton-details { width: 100%; height: 40px; }
+.gig-skeleton-features { width: 100%; height: 60px; }
+.gig-skeleton-button { width: 100%; height: 40px; margin-top: 20px; }
+
+@keyframes gig-skeleton-pulse {
+  0% { background-color: #ececec; }
+  50% { background-color: #f5f5f5; }
+  100% { background-color: #ececec; }
+}
