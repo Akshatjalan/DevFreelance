@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../styles/Orders.css";
 import { useQuery } from "@tanstack/react-query";
 import newRequest from "../utils/newRequest";
-import logo from "../assets/right-arrow.png";
+import messageIcon from "../assets/message-icon.png";
 
 
 const Orders = () => {
@@ -64,7 +64,7 @@ const Orders = () => {
                 <td>
                   <img
                     className="orderContact"
-                    src={logo}
+                    src={messageIcon}
                     alt=""
                     onClick={() => handleContact(order)}
                   />

@@ -1,3 +1,66 @@
+/* Ensure box-sizing for all elements */
+.pay *,
+.StripeElement,
+.pay form {
+  box-sizing: border-box;
+}
+
 .pay {
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.StripeElement,
+.pay form {
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(50, 50, 93, 0.07), 0 1.5px 4px rgba(0,0,0,0.07);
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Add spacing between form fields */
+.pay form > * + * {
+  margin-top: 18px;
+}
+
+.pay button {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.pay button:hover {
+  background: #333;
+}
+
+.pay button:disabled {
+  background: #bbb;
+  cursor: not-allowed;
+}
+
+.pay h2, .pay h3 {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .StripeElement,
+  .pay form {
+    padding: 18px 8px;
+    max-width: 350px;
+  }
 }
