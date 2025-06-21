@@ -1,0 +1,32 @@
+.success-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f6fff8;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 48px 32px;
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: #27ae60;
+  margin-bottom: 24px;
+}
+
+.success-message {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.success-redirect {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+}

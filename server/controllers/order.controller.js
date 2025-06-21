@@ -2,16 +2,31 @@ import createError from "../utils/createError.js";
 import Order from "../models/order.model.js";
 import Gig from "../models/gig.model.js";
 import Stripe from "stripe";
+
 export const intent = async (req, res, next) => {
   const stripe = new Stripe(process.env.STRIPE);
 
   const gig = await Gig.findById(req.params.id);
 
+  const customerName = req.body.name || "Test User";
+  const customerAddress = req.body.address || {
+    line1: "123 Main Street",
+    city: "Mumbai",
+    state: "MH",
+    postal_code: "400001",
+    country: "IN",
+  };
+
   const paymentIntent = await stripe.paymentIntents.create({
-    amount: gig.price * 100,
-    currency: "usd",
+    amount: gig.price,
+    currency: 'usd',
+    description: `Order for gig: ${gig.title} by seller ${gig.userId} for buyer ${req.userId}`,
     automatic_payment_methods: {
       enabled: true,
+    },
+    shipping: {
+      name: customerName,
+      address: customerAddress,
     },
   });
 
@@ -53,6 +68,7 @@ export const confirm = async (req, res, next) => {
       {
         $set: {
           isCompleted: true,
+          new: true,
         },
       }
     );

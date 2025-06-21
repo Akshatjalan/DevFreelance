@@ -15,8 +15,8 @@ import Gig from "./pages/Gig";
 import Footer from "./components/Footer";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import ScrollToTop from "./components/ScrollToTop";
-// import Pay from "./pages/pay/Pay";
-// import Success from "./pages/success/Success";
+import Pay from "./pages/Pay";
+import Success from "./pages/Success";
 
 function App() {
   const queryClient = new QueryClient();
@@ -79,14 +79,14 @@ function App() {
           path: "/login",
           element: <Login />,
         },
-        // {
-        //   path: "/pay/:id",
-        //   element: <Pay />,
-        // },
-        // {
-        //   path: "/success",
-        //   element: <Success />,
-        // },
+        {
+          path: "/pay/:id",
+          element: <Pay />,
+        },
+        {
+          path: "/success",
+          element: <Success />,
+        },
       ],
     },
   ]);
