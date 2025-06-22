@@ -44,7 +44,7 @@ export const login = async (req, res, next) => {
         secure: true,  
       })
       .status(200)
-      .send(info);
+      .send({ ...info, token }); // Send token in response body
   } catch (err) {
     next(err);
   }

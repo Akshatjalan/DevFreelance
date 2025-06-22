@@ -15,6 +15,7 @@ function Login() {
     try {
       const res = await newRequest.post("/auth/login", { username, password });
       localStorage.setItem("currentUser", JSON.stringify(res.data));
+      localStorage.setItem("accessToken", res.data.token); // <-- Save JWT for header auth
       navigate("/");
     } catch (err) {
       setError(err.response.data);
