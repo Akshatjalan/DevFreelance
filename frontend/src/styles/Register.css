@@ -131,6 +131,12 @@
   transform: translateX(26px);
 }
 
+.loginsecondLine {
+  font-size: 16px;
+  text-align: center;
+}
+
+
 .loginLine {
   font-size: 20px;
   text-align: center;

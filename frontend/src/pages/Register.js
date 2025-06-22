@@ -47,6 +47,9 @@ function Register() {
       <p className="loginLine">
         Already have an account? <Link to="/login">Login</Link>
       </p>
+      <p className="loginsecondLine">
+        For testing purposes, use the credentials: username: <b>user</b> and password: <b>user</b>
+      </p>
 
       <div className="register">
         <form onSubmit={handleSubmit}>
@@ -67,9 +70,12 @@ function Register() {
               onChange={handleChange}
             />
             <label htmlFor="">Password</label>
-            <input name="password" type="password" 
+            <input
+              name="password"
+              type="password"
               placeholder="********"
-            onChange={handleChange} />
+              onChange={handleChange}
+            />
             {/* <label htmlFor="">Profile Picture</label>
           <input type="file" onChange={(e) => setFile(e.target.files[0])} /> */}
             <label htmlFor="">Country</label>

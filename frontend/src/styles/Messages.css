@@ -5,8 +5,8 @@
 }
 
 .messagesContainer {
-  width: 1400px;
-  padding: 50px 0px;
+  width: 1200px;
+  padding: 50px 20px;
 }
 
 .messagesTitle {
@@ -30,4 +30,12 @@ tr.active {
 .messages tr {
   background-color: white;
   height: 80px;
+}
+
+
+.noMessages {
+  text-align: center;
+  color: #888;
+  font-size: 1.08rem;
+  padding: 32px 0;
 }

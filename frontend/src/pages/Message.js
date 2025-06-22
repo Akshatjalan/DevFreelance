@@ -39,9 +39,9 @@ const Message = () => {
   return (
     <div className="message">
       <div className="messageContainer">
-        <span className="breadcrumbs">
+        {/* <span className="breadcrumbs">
           Messages {">"} Akshat Jalan {">"}
-        </span>
+        </span> */}
         {isLoading ? (
           "loading"
         ) : error ? (
@@ -64,7 +64,7 @@ const Message = () => {
         )}
         <hr />
         <form className="write" onSubmit={handleSubmit}>
-          <textarea type="text" placeholder="write a message" />
+          <textarea type="text" placeholder="Write a message" />
           <button type="submit" className="Buttons">Send</button>
         </form>
       </div>
