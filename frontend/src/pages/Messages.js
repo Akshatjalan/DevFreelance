@@ -39,7 +39,11 @@ const Messages = () => {
           <div>Loading messages...</div>
         </div>
       ) : error ? (
-        "error"
+        <div className="loadingPlaceholder">
+          <div className="errorMessage">
+            Sorry, something went wrong while loading your messages.
+          </div>
+        </div>
       ) : (
         <div className="messagesContainer">
           <div className="messagesTitle">

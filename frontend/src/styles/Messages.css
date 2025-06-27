@@ -114,3 +114,21 @@ tr.active {
     transform: rotate(360deg);
   }
 }
+
+
+.errorMessage {
+  background: #ffeaea;
+  color: #b00020;
+  border: 1px solid #ffb3b3;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+}
+
+@media (max-width: 900px) {
+  .errorMessage {
+    max-width: 80vw;
+    font-size: 0.98rem;
+  }}
