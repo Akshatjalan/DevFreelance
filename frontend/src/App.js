@@ -17,8 +17,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import ScrollToTop from "./components/ScrollToTop";
 import Pay from "./pages/Pay";
 import Success from "./pages/Success";
+import useAutoLogout from "./utils/AutoLogout";
 
 function App() {
+  useAutoLogout();
   const queryClient = new QueryClient();
 
   const Layout = () => {
