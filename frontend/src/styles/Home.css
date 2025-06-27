@@ -55,6 +55,7 @@
   left: -60px;
   bottom: 160px;
   width: 400px;
+  transition: all ease-in-out 0.4s;
 }
 
 .heroRightImg {
@@ -62,6 +63,7 @@
   right: -60px;
   width: 400px;
   top: 60px;
+  transition: all ease-in-out 0.4s;
 }
 
 .heroLeftImg:hover {

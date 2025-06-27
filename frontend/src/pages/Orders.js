@@ -5,7 +5,6 @@ import { useQuery } from "@tanstack/react-query";
 import newRequest from "../utils/newRequest";
 import messageIcon from "../assets/message-icon.png";
 
-
 const Orders = () => {
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
@@ -39,7 +38,10 @@ const Orders = () => {
   return (
     <div className="orders">
       {isLoading ? (
-        "loading"
+        <div className="loadingPlaceholder">
+          <div className="spinner"></div>
+          <div>Loading Orders...</div>
+        </div>
       ) : error ? (
         "error"
       ) : (

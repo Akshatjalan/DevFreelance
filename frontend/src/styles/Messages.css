@@ -7,6 +7,7 @@
 .messagesContainer {
   width: 1200px;
   padding: 50px 20px;
+  height: 50vh;
 }
 
 .messagesTitle {
@@ -25,17 +26,91 @@ tr.active {
   padding: 10px;
   border: none;
   cursor: pointer;
+  border-radius: 8px;
+}
+
+.markButton a {
+  color: white;
+  text-decoration: none;
+}
+
+.markButton:hover {
+  background-color: #333;
+  text-decoration: none;
+}
+
+.messages th {
+  background-color: white;
 }
 
 .messages tr {
-  background-color: white;
+  background-color: #4e4e4e0f;
   height: 80px;
 }
 
+.messages td {
+  padding-left: 8px;
+}
 
 .noMessages {
   text-align: center;
   color: #888;
   font-size: 1.08rem;
   padding: 32px 0;
+}
+
+.messagelink {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .messagesContainer {
+    height: auto;
+  }
+
+  .messages tr {
+    background-color: #4e4e4e0f;
+    height: 80px;
+    font-size: 14px;
+  }
+
+  .messages td {
+    padding-left: 2px;
+  }
+
+  .markButton {
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+
+  .loadingPlaceholder {
+    height: 50px;
+  }
+}
+
+.loadingPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+}
+
+.spinner {
+  border: 4px solid #eee;
+  border-top: 4px solid #555;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 12px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }

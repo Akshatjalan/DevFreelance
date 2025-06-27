@@ -34,8 +34,9 @@ const Messages = () => {
   return (
     <div className="messages">
       {isLoading ? (
-        <div className="noMessages">
-          Loading...
+        <div className="loadingPlaceholder">
+          <div className="spinner"></div>
+          <div>Loading messages...</div>
         </div>
       ) : error ? (
         "error"
@@ -73,19 +74,23 @@ const Messages = () => {
                 >
                   <td>{currentUser.isSeller ? c.buyerId : c.sellerId}</td>
                   <td>
-                    <Link to={`/message/${c.id}`} className="link">
+                    <Link to={`/message/${c.id}`} className="messagelink">
                       {c?.lastMessage?.substring(0, 100)}...
                     </Link>
                   </td>
                   <td>{moment(c.updatedAt).fromNow()}</td>
                   <td>
-                    {((currentUser.isSeller && !c.readBySeller) ||
-                      (!currentUser.isSeller && !c.readByBuyer)) && (
+                    {(currentUser.isSeller && !c.readBySeller) ||
+                    (!currentUser.isSeller && !c.readByBuyer) ? (
                       <button
                         className="markButton"
                         onClick={() => handleRead(c.id)}
                       >
                         Mark as Read
+                      </button>
+                    ) : (
+                      <button className="markButton">
+                        <Link to={`/message/${c.id}`}>Open</Link>
                       </button>
                     )}
                   </td>
