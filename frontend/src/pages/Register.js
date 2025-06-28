@@ -5,6 +5,7 @@ import newRequest from "../utils/newRequest";
 import { Link, useNavigate } from "react-router-dom";
 
 function Register() {
+  const [errorMsg, setErrorMsg] = useState("");
   // const [file, setFile] = useState(null);
   const [user, setUser] = useState({
     username: "",
@@ -39,18 +40,26 @@ function Register() {
       });
       navigate("/");
     } catch (err) {
-      console.log(err);
+      // Try to extract a readable message
+      if (err.response && err.response.data && err.response.data.message) {
+        setErrorMsg(err.response.data.message);
+      } else if (err.response && err.response.data) {
+        setErrorMsg(err.response.data);
+      } else {
+        setErrorMsg("Registration failed. Please check your input.");
+      }
     }
   };
   return (
     <>
       <p className="loginLine">
-        Already have an account? <Link to="/login">Login</Link>
+        Already have an account? <Link to="/login">SignIn</Link>
       </p>
       <p className="loginsecondLine">
-        For testing purposes, use the credentials: username: <b>user</b> and password: <b>user</b>
+        For testing purposes, use the credentials: username: <b>user</b> and
+        password: <b>user</b>
       </p>
-
+      {errorMsg && <div className="registerError">{errorMsg}</div>}
       <div className="register">
         <form onSubmit={handleSubmit}>
           <div className="left">

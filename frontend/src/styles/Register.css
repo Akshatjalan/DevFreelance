@@ -136,7 +136,6 @@
   text-align: center;
 }
 
-
 .loginLine {
   font-size: 20px;
   text-align: center;
@@ -153,6 +152,18 @@
 .loginLine a:hover {
   color: #000;
   transition: all ease-in-out 0.3s;
+}
+
+.registerError {
+  background: #ffeaea;
+  color: #b00020;
+  border: 1px solid #ffb3b3;
+  padding: 14px 18px;
+  margin: 0px 300px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -179,6 +190,18 @@
 
   .loginLine {
     font-size: 18px;
+    text-align: center;
+  }
+
+  .registerError {
+    background: #ffeaea;
+    color: #b00020;
+    border: 1px solid #ffb3b3;
+    padding: 14px 18px;
+    margin: 0px 30px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1rem;
     text-align: center;
   }
 }

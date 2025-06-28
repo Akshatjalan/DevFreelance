@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import "../styles/Message.css";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import newRequest from "../utils/newRequest";
+import profilePic from "../assets/undraw_Male_avatar.png";
 
 const Message = () => {
   const { id } = useParams();
@@ -54,7 +55,7 @@ const Message = () => {
                 key={m._id}
               >
                 <img
-                  src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                  src={profilePic}
                   alt=""
                 />
                 <p>{m.desc}</p>

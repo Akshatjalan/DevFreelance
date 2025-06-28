@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useState } from "react";
 import { gigReducer, INITIAL_STATE } from "../utils/gigReducer";
 // import upload from "../../utils/upload";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
@@ -28,6 +28,44 @@ const Add = () => {
   // const [singleFile, setSingleFile] = useState(undefined);
   // const [files, setFiles] = useState([]);
   // const [uploading, setUploading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setErrorMsg(""); // Clear previous errors
+
+    // Required fields validation
+    const requiredFields = [
+      { key: "title", label: "Title" },
+      { key: "cat", label: "Category" },
+      { key: "cover", label: "Cover Image" },
+      { key: "desc", label: "Description" },
+      { key: "shortTitle", label: "Service Title" },
+      { key: "shortDesc", label: "Short Description" },
+      { key: "deliveryTime", label: "Delivery Time" },
+      { key: "revisionNumber", label: "Revision Number" },
+      { key: "price", label: "Price" },
+    ];
+
+    const missing = requiredFields.filter(
+      (field) =>
+        state[field.key] === "" ||
+        state[field.key] === 0 ||
+        state[field.key] === undefined
+    );
+
+    if (missing.length > 0) {
+      setErrorMsg(
+        `Please fill in the following required fields: ${missing
+          .map((f) => f.label)
+          .join(", ")}`
+      );
+      return;
+    }
+
+    mutation.mutate(state);
+    // navigate("/mygigs")
+  };
 
   const [state, dispatch] = useReducer(gigReducer, {
     ...INITIAL_STATE,
@@ -86,16 +124,34 @@ const Add = () => {
     },
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    mutation.mutate(state);
-    // navigate("/mygigs")
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   mutation.mutate(state);
+  //   // navigate("/mygigs")
+  // };
 
   return (
     <div className="add">
       <div className="container">
         <h1>Add New Gig</h1>
+        {errorMsg && (
+          <div
+            className="addError"
+            style={{
+              background: "#ffeaea",
+              color: "#b00020",
+              border: "1px solid #ffb3b3",
+              padding: "14px 18px",
+              marginBottom: "18px",
+              borderRadius: "6px",
+              textAlign: "center",
+              fontSize: "1rem",
+            }}
+          >
+            {errorMsg}
+          </div>
+        )}
+
         <div className="sections">
           <div className="info">
             <label htmlFor="">Title</label>
@@ -179,7 +235,7 @@ const Add = () => {
               name="revisionNumber"
               onChange={handleChange}
             />
-                        <label htmlFor="">Price</label>
+            <label htmlFor="">Price</label>
             <input type="number" onChange={handleChange} name="price" />
           </div>
         </div>
