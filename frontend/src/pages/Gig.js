@@ -74,7 +74,7 @@ function Gig() {
             <div className="gigUser">
               <img
                 className="pp"
-                src="https://images.pexels.com/photos/720327/pexels-photo-720327.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                src={data.images}
                 alt=""
               />
               <span>Akshat Jalan</span>
@@ -93,7 +93,7 @@ function Gig() {
               <div className="gigSellerUser">
                 <img
                   className="gigSellerImg"
-                  src="https://images.pexels.com/photos/720327/pexels-photo-720327.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                  src={data.images}
                   alt=""
                 />
                 <div className="gigInfo">

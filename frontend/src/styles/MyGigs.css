@@ -5,8 +5,9 @@
 }
 
 .myGigsContainer {
-  width: 1400px;
-  padding: 50px 0px;
+  width: 1200px;
+  padding: 50px 20px;
+  height: 50vh;
 }
 
 .myGigsTitle {
@@ -25,6 +26,10 @@ table {
   object-fit: cover;
 }
 
+.myGigsContainer td {
+  padding-left: 8px;
+}
+
 tr {
   height: 50px;
 }
@@ -37,4 +42,13 @@ th {
 }
 tr:nth-child(even) {
   background-color: #4e4e4e0f;
+}
+
+@media (max-width: 900px) {
+  .messagesContainer {
+    height: auto;
+  }
+  .myGigsContainer td {
+  padding-left: 4px;
+}
 }

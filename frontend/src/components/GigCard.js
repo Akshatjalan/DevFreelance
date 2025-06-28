@@ -4,6 +4,7 @@ import "../styles/GigCard.css";
 import starImg from "../assets/star.png";
 import { useQuery } from "@tanstack/react-query";
 import newRequest from "../utils/newRequest";
+import avatarImg from "../assets/undraw_Male_avatar.png";
 
 const GigCard = ({ item }) => {
   const { isLoading, error } = useQuery({
@@ -47,7 +48,14 @@ const GigCard = ({ item }) => {
           <img className="gigImg" src={item.cover} alt="" />
           <div className="info">
             <div className="cardUser">
-              <img src={item.images} alt="" />
+              <img
+                src={
+                  item.images && item.images.length > 0
+                    ? item.images
+                    : avatarImg
+                }
+                alt=""
+              />
               <span>{item.shortTitle}</span>
             </div>
 
